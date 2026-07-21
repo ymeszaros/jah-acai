@@ -1,0 +1,1195 @@
+<!doctype html>
+<html lang="es">
+<head><meta charset="UTF-8"><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>(()=>{class RocketLazyLoadScripts{constructor(){this.v="2.0.3",this.userEvents=["keydown","keyup","mousedown","mouseup","mousemove","mouseover","mouseenter","mouseout","mouseleave","touchmove","touchstart","touchend","touchcancel","wheel","click","dblclick","input","visibilitychange"],this.attributeEvents=["onblur","onclick","oncontextmenu","ondblclick","onfocus","onmousedown","onmouseenter","onmouseleave","onmousemove","onmouseout","onmouseover","onmouseup","onmousewheel","onscroll","onsubmit"]}async t(){this.i(),this.o(),/iP(ad|hone)/.test(navigator.userAgent)&&this.h(),this.u(),this.l(this),this.m(),this.k(this),this.p(this),this._(),await Promise.all([this.R(),this.L()]),this.lastBreath=Date.now(),this.S(this),this.P(),this.D(),this.O(),this.M(),await this.C(this.delayedScripts.normal),await this.C(this.delayedScripts.defer),await this.C(this.delayedScripts.async),this.F("domReady"),await this.T(),await this.j(),await this.I(),this.F("windowLoad"),await this.A(),window.dispatchEvent(new Event("rocket-allScriptsLoaded")),this.everythingLoaded=!0,this.lastTouchEnd&&await new Promise((t=>setTimeout(t,500-Date.now()+this.lastTouchEnd))),this.H(),this.F("all"),this.U(),this.W()}i(){this.CSPIssue=sessionStorage.getItem("rocketCSPIssue"),document.addEventListener("securitypolicyviolation",(t=>{this.CSPIssue||"script-src-elem"!==t.violatedDirective||"data"!==t.blockedURI||(this.CSPIssue=!0,sessionStorage.setItem("rocketCSPIssue",!0))}),{isRocket:!0})}o(){window.addEventListener("pageshow",(t=>{this.persisted=t.persisted,this.realWindowLoadedFired=!0}),{isRocket:!0}),window.addEventListener("pagehide",(()=>{this.onFirstUserAction=null}),{isRocket:!0})}h(){let t;function e(e){t=e}window.addEventListener("touchstart",e,{isRocket:!0}),window.addEventListener("touchend",(function i(o){Math.abs(o.changedTouches[0].pageX-t.changedTouches[0].pageX)<10&&Math.abs(o.changedTouches[0].pageY-t.changedTouches[0].pageY)<10&&o.timeStamp-t.timeStamp<200&&(o.target.dispatchEvent(new PointerEvent("click",{target:o.target,bubbles:!0,cancelable:!0,detail:1})),event.preventDefault(),window.removeEventListener("touchstart",e,{isRocket:!0}),window.removeEventListener("touchend",i,{isRocket:!0}))}),{isRocket:!0})}q(t){this.userActionTriggered||("mousemove"!==t.type||this.firstMousemoveIgnored?"keyup"===t.type||"mouseover"===t.type||"mouseout"===t.type||(this.userActionTriggered=!0,this.onFirstUserAction&&this.onFirstUserAction()):this.firstMousemoveIgnored=!0),"click"===t.type&&t.preventDefault(),this.savedUserEvents.length>0&&(t.stopPropagation(),t.stopImmediatePropagation()),"touchstart"===this.lastEvent&&"touchend"===t.type&&(this.lastTouchEnd=Date.now()),"click"===t.type&&(this.lastTouchEnd=0),this.lastEvent=t.type,this.savedUserEvents.push(t)}u(){this.savedUserEvents=[],this.userEventHandler=this.q.bind(this),this.userEvents.forEach((t=>window.addEventListener(t,this.userEventHandler,{passive:!1,isRocket:!0})))}U(){this.userEvents.forEach((t=>window.removeEventListener(t,this.userEventHandler,{passive:!1,isRocket:!0}))),this.savedUserEvents.forEach((t=>{t.target.dispatchEvent(new window[t.constructor.name](t.type,t))}))}m(){this.eventsMutationObserver=new MutationObserver((t=>{const e="return false";for(const i of t){if("attributes"===i.type){const t=i.target.getAttribute(i.attributeName);t&&t!==e&&(i.target.setAttribute("data-rocket-"+i.attributeName,t),i.target["rocket"+i.attributeName]=new Function("event",t),i.target.setAttribute(i.attributeName,e))}"childList"===i.type&&i.addedNodes.forEach((t=>{if(t.nodeType===Node.ELEMENT_NODE)for(const i of t.attributes)this.attributeEvents.includes(i.name)&&i.value&&""!==i.value&&(t.setAttribute("data-rocket-"+i.name,i.value),t["rocket"+i.name]=new Function("event",i.value),t.setAttribute(i.name,e))}))}})),this.eventsMutationObserver.observe(document,{subtree:!0,childList:!0,attributeFilter:this.attributeEvents})}H(){this.eventsMutationObserver.disconnect(),this.attributeEvents.forEach((t=>{document.querySelectorAll("[data-rocket-"+t+"]").forEach((e=>{e.setAttribute(t,e.getAttribute("data-rocket-"+t)),e.removeAttribute("data-rocket-"+t)}))}))}k(t){Object.defineProperty(HTMLElement.prototype,"onclick",{get(){return this.rocketonclick||null},set(e){this.rocketonclick=e,this.setAttribute(t.everythingLoaded?"onclick":"data-rocket-onclick","this.rocketonclick(event)")}})}S(t){function e(e,i){let o=e[i];e[i]=null,Object.defineProperty(e,i,{get:()=>o,set(s){t.everythingLoaded?o=s:e["rocket"+i]=o=s}})}e(document,"onreadystatechange"),e(window,"onload"),e(window,"onpageshow");try{Object.defineProperty(document,"readyState",{get:()=>t.rocketReadyState,set(e){t.rocketReadyState=e},configurable:!0}),document.readyState="loading"}catch(t){console.log("WPRocket DJE readyState conflict, bypassing")}}l(t){this.originalAddEventListener=EventTarget.prototype.addEventListener,this.originalRemoveEventListener=EventTarget.prototype.removeEventListener,this.savedEventListeners=[],EventTarget.prototype.addEventListener=function(e,i,o){o&&o.isRocket||!t.B(e,this)&&!t.userEvents.includes(e)||t.B(e,this)&&!t.userActionTriggered||e.startsWith("rocket-")||t.everythingLoaded?t.originalAddEventListener.call(this,e,i,o):t.savedEventListeners.push({target:this,remove:!1,type:e,func:i,options:o})},EventTarget.prototype.removeEventListener=function(e,i,o){o&&o.isRocket||!t.B(e,this)&&!t.userEvents.includes(e)||t.B(e,this)&&!t.userActionTriggered||e.startsWith("rocket-")||t.everythingLoaded?t.originalRemoveEventListener.call(this,e,i,o):t.savedEventListeners.push({target:this,remove:!0,type:e,func:i,options:o})}}F(t){"all"===t&&(EventTarget.prototype.addEventListener=this.originalAddEventListener,EventTarget.prototype.removeEventListener=this.originalRemoveEventListener),this.savedEventListeners=this.savedEventListeners.filter((e=>{let i=e.type,o=e.target||window;return"domReady"===t&&"DOMContentLoaded"!==i&&"readystatechange"!==i||("windowLoad"===t&&"load"!==i&&"readystatechange"!==i&&"pageshow"!==i||(this.B(i,o)&&(i="rocket-"+i),e.remove?o.removeEventListener(i,e.func,e.options):o.addEventListener(i,e.func,e.options),!1))}))}p(t){let e;function i(e){return t.everythingLoaded?e:e.split(" ").map((t=>"load"===t||t.startsWith("load.")?"rocket-jquery-load":t)).join(" ")}function o(o){function s(e){const s=o.fn[e];o.fn[e]=o.fn.init.prototype[e]=function(){return this[0]===window&&t.userActionTriggered&&("string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=i(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach((t=>{const e=arguments[0][t];delete arguments[0][t],arguments[0][i(t)]=e}))),s.apply(this,arguments),this}}if(o&&o.fn&&!t.allJQueries.includes(o)){const e={DOMContentLoaded:[],"rocket-DOMContentLoaded":[]};for(const t in e)document.addEventListener(t,(()=>{e[t].forEach((t=>t()))}),{isRocket:!0});o.fn.ready=o.fn.init.prototype.ready=function(i){function s(){parseInt(o.fn.jquery)>2?setTimeout((()=>i.bind(document)(o))):i.bind(document)(o)}return t.realDomReadyFired?!t.userActionTriggered||t.fauxDomReadyFired?s():e["rocket-DOMContentLoaded"].push(s):e.DOMContentLoaded.push(s),o([])},s("on"),s("one"),s("off"),t.allJQueries.push(o)}e=o}t.allJQueries=[],o(window.jQuery),Object.defineProperty(window,"jQuery",{get:()=>e,set(t){o(t)}})}P(){const t=new Map;document.write=document.writeln=function(e){const i=document.currentScript,o=document.createRange(),s=i.parentElement;let n=t.get(i);void 0===n&&(n=i.nextSibling,t.set(i,n));const c=document.createDocumentFragment();o.setStart(c,0),c.appendChild(o.createContextualFragment(e)),s.insertBefore(c,n)}}async R(){return new Promise((t=>{this.userActionTriggered?t():this.onFirstUserAction=t}))}async L(){return new Promise((t=>{document.addEventListener("DOMContentLoaded",(()=>{this.realDomReadyFired=!0,t()}),{isRocket:!0})}))}async I(){return this.realWindowLoadedFired?Promise.resolve():new Promise((t=>{window.addEventListener("load",t,{isRocket:!0})}))}M(){this.pendingScripts=[];this.scriptsMutationObserver=new MutationObserver((t=>{for(const e of t)e.addedNodes.forEach((t=>{"SCRIPT"!==t.tagName||t.noModule||t.isWPRocket||this.pendingScripts.push({script:t,promise:new Promise((e=>{const i=()=>{const i=this.pendingScripts.findIndex((e=>e.script===t));i>=0&&this.pendingScripts.splice(i,1),e()};t.addEventListener("load",i,{isRocket:!0}),t.addEventListener("error",i,{isRocket:!0}),setTimeout(i,1e3)}))})}))})),this.scriptsMutationObserver.observe(document,{childList:!0,subtree:!0})}async j(){await this.J(),this.pendingScripts.length?(await this.pendingScripts[0].promise,await this.j()):this.scriptsMutationObserver.disconnect()}D(){this.delayedScripts={normal:[],async:[],defer:[]},document.querySelectorAll("script[type$=rocketlazyloadscript]").forEach((t=>{t.hasAttribute("data-rocket-src")?t.hasAttribute("async")&&!1!==t.async?this.delayedScripts.async.push(t):t.hasAttribute("defer")&&!1!==t.defer||"module"===t.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(t):this.delayedScripts.normal.push(t):this.delayedScripts.normal.push(t)}))}async _(){await this.L();let t=[];document.querySelectorAll("script[type$=rocketlazyloadscript][data-rocket-src]").forEach((e=>{let i=e.getAttribute("data-rocket-src");if(i&&!i.startsWith("data:")){i.startsWith("//")&&(i=location.protocol+i);try{const o=new URL(i).origin;o!==location.origin&&t.push({src:o,crossOrigin:e.crossOrigin||"module"===e.getAttribute("data-rocket-type")})}catch(t){}}})),t=[...new Map(t.map((t=>[JSON.stringify(t),t]))).values()],this.N(t,"preconnect")}async $(t){if(await this.G(),!0!==t.noModule||!("noModule"in HTMLScriptElement.prototype))return new Promise((e=>{let i;function o(){(i||t).setAttribute("data-rocket-status","executed"),e()}try{if(navigator.userAgent.includes("Firefox/")||""===navigator.vendor||this.CSPIssue)i=document.createElement("script"),[...t.attributes].forEach((t=>{let e=t.nodeName;"type"!==e&&("data-rocket-type"===e&&(e="type"),"data-rocket-src"===e&&(e="src"),i.setAttribute(e,t.nodeValue))})),t.text&&(i.text=t.text),t.nonce&&(i.nonce=t.nonce),i.hasAttribute("src")?(i.addEventListener("load",o,{isRocket:!0}),i.addEventListener("error",(()=>{i.setAttribute("data-rocket-status","failed-network"),e()}),{isRocket:!0}),setTimeout((()=>{i.isConnected||e()}),1)):(i.text=t.text,o()),i.isWPRocket=!0,t.parentNode.replaceChild(i,t);else{const i=t.getAttribute("data-rocket-type"),s=t.getAttribute("data-rocket-src");i?(t.type=i,t.removeAttribute("data-rocket-type")):t.removeAttribute("type"),t.addEventListener("load",o,{isRocket:!0}),t.addEventListener("error",(i=>{this.CSPIssue&&i.target.src.startsWith("data:")?(console.log("WPRocket: CSP fallback activated"),t.removeAttribute("src"),this.$(t).then(e)):(t.setAttribute("data-rocket-status","failed-network"),e())}),{isRocket:!0}),s?(t.fetchPriority="high",t.removeAttribute("data-rocket-src"),t.src=s):t.src="data:text/javascript;base64,"+window.btoa(unescape(encodeURIComponent(t.text)))}}catch(i){t.setAttribute("data-rocket-status","failed-transform"),e()}}));t.setAttribute("data-rocket-status","skipped")}async C(t){const e=t.shift();return e?(e.isConnected&&await this.$(e),this.C(t)):Promise.resolve()}O(){this.N([...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async],"preload")}N(t,e){this.trash=this.trash||[];let i=!0;var o=document.createDocumentFragment();t.forEach((t=>{const s=t.getAttribute&&t.getAttribute("data-rocket-src")||t.src;if(s&&!s.startsWith("data:")){const n=document.createElement("link");n.href=s,n.rel=e,"preconnect"!==e&&(n.as="script",n.fetchPriority=i?"high":"low"),t.getAttribute&&"module"===t.getAttribute("data-rocket-type")&&(n.crossOrigin=!0),t.crossOrigin&&(n.crossOrigin=t.crossOrigin),t.integrity&&(n.integrity=t.integrity),t.nonce&&(n.nonce=t.nonce),o.appendChild(n),this.trash.push(n),i=!1}})),document.head.appendChild(o)}W(){this.trash.forEach((t=>t.remove()))}async T(){try{document.readyState="interactive"}catch(t){}this.fauxDomReadyFired=!0;try{await this.G(),document.dispatchEvent(new Event("rocket-readystatechange")),await this.G(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.G(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this.G(),window.dispatchEvent(new Event("rocket-DOMContentLoaded"))}catch(t){console.error(t)}}async A(){try{document.readyState="complete"}catch(t){}try{await this.G(),document.dispatchEvent(new Event("rocket-readystatechange")),await this.G(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.G(),window.dispatchEvent(new Event("rocket-load")),await this.G(),window.rocketonload&&window.rocketonload(),await this.G(),this.allJQueries.forEach((t=>t(window).trigger("rocket-jquery-load"))),await this.G();const t=new Event("rocket-pageshow");t.persisted=this.persisted,window.dispatchEvent(t),await this.G(),window.rocketonpageshow&&window.rocketonpageshow({persisted:this.persisted})}catch(t){console.error(t)}}async G(){Date.now()-this.lastBreath>45&&(await this.J(),this.lastBreath=Date.now())}async J(){return document.hidden?new Promise((t=>setTimeout(t))):new Promise((t=>requestAnimationFrame(t)))}B(t,e){return e===document&&"readystatechange"===t||(e===document&&"DOMContentLoaded"===t||(e===window&&"DOMContentLoaded"===t||(e===window&&"load"===t||e===window&&"pageshow"===t)))}static run(){(new RocketLazyLoadScripts).t()}}RocketLazyLoadScripts.run()})();</script>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO plugin v28.0 - https://yoast.com/product/yoast-seo-wordpress/ -->
+	<title>Más sabor con más ventajas: ¡Hay CASHBACK en la App de JAH! - JAH do Açaí</title>
+	<meta name="description" content="Más sabor con más ventajas: ¡Hay CASHBACK en la App de JAH!" />
+	<link rel="canonical" href="/mais-sabor-com-mais-vantagens-tem-cashback-no-app-do-jah-2/" />
+	<meta property="og:locale" content="es_ES" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Más sabor con más ventajas: ¡Hay CASHBACK en la App de JAH! - JAH do Açaí" />
+	<meta property="og:description" content="Más sabor con más ventajas: ¡Hay CASHBACK en la App de JAH!" />
+	<meta property="og:url" content="/mais-sabor-com-mais-vantagens-tem-cashback-no-app-do-jah-2/" />
+	<meta property="og:site_name" content="JAH do Açaí" />
+	<meta property="article:publisher" content="https://www.facebook.com/jahacaisorvetespicoles/" />
+	<meta property="article:published_time" content="2023-09-26T23:34:34+00:00" />
+	<meta property="article:modified_time" content="2023-11-03T23:40:47+00:00" />
+	<meta property="og:image" content="/wp-content/uploads/2023/11/capa-blog-cashback-01-1800x1200.png" />
+	<meta property="og:image:width" content="1800" />
+	<meta property="og:image:height" content="1200" />
+	<meta property="og:image:type" content="image/png" />
+	<meta name="author" content="JAH" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:label1" content="Escrito por" />
+	<meta name="twitter:data1" content="JAH" />
+	<meta name="twitter:label2" content="Est. tempo de leitura" />
+	<meta name="twitter:data2" content="3 minutos" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"/mais-sabor-com-mais-vantagens-tem-cashback-no-app-do-jah-2/#article","isPartOf":{"@id":"/mais-sabor-com-mais-vantagens-tem-cashback-no-app-do-jah-2/"},"author":{"name":"JAH","@id":"/#/schema/person/aa8cef761cccfcc1d3cf6b8b0f7593ea"},"headline":"Más sabor con más ventajas: ¡Hay CASHBACK en la App de JAH!","datePublished":"2023-09-26T23:34:34+00:00","dateModified":"2023-11-03T23:40:47+00:00","mainEntityOfPage":{"@id":"/mais-sabor-com-mais-vantagens-tem-cashback-no-app-do-jah-2/"},"wordCount":518,"commentCount":0,"publisher":{"@id":"/#organization"},"image":{"@id":"/mais-sabor-com-mais-vantagens-tem-cashback-no-app-do-jah-2/#primaryimage"},"thumbnailUrl":"/wp-content/uploads/2023/11/capa-blog-cashback-01.png","articleSection":["Productos"],"inLanguage":"es","potentialAction":[{"@type":"CommentAction","name":"Comment","target":["/mais-sabor-com-mais-vantagens-tem-cashback-no-app-do-jah-2/#respond"]}]},{"@type":"WebPage","@id":"/mais-sabor-com-mais-vantagens-tem-cashback-no-app-do-jah-2/","url":"/mais-sabor-com-mais-vantagens-tem-cashback-no-app-do-jah-2/","name":"Más sabor con más ventajas: ¡Hay CASHBACK en la App de JAH! - JAH do Açaí","isPartOf":{"@id":"/#website"},"primaryImageOfPage":{"@id":"/mais-sabor-com-mais-vantagens-tem-cashback-no-app-do-jah-2/#primaryimage"},"image":{"@id":"/mais-sabor-com-mais-vantagens-tem-cashback-no-app-do-jah-2/#primaryimage"},"thumbnailUrl":"/wp-content/uploads/2023/11/capa-blog-cashback-01.png","datePublished":"2023-09-26T23:34:34+00:00","dateModified":"2023-11-03T23:40:47+00:00","description":"Más sabor con más ventajas: ¡Hay CASHBACK en la App de JAH!","breadcrumb":{"@id":"/mais-sabor-com-mais-vantagens-tem-cashback-no-app-do-jah-2/#breadcrumb"},"inLanguage":"es","potentialAction":[{"@type":"ReadAction","target":["/mais-sabor-com-mais-vantagens-tem-cashback-no-app-do-jah-2/"]}]},{"@type":"ImageObject","inLanguage":"es","@id":"/mais-sabor-com-mais-vantagens-tem-cashback-no-app-do-jah-2/#primaryimage","url":"/wp-content/uploads/2023/11/capa-blog-cashback-01.png","contentUrl":"/wp-content/uploads/2023/11/capa-blog-cashback-01.png","width":5000,"height":3334},{"@type":"BreadcrumbList","@id":"/mais-sabor-com-mais-vantagens-tem-cashback-no-app-do-jah-2/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"/"},{"@type":"ListItem","position":2,"name":"Más sabor con más ventajas: ¡Hay CASHBACK en la App de JAH!"}]},{"@type":"WebSite","@id":"/#website","url":"/","name":"JAH do Açaí","description":"La Mayor Franquicia Brasileña de Açaí y Helados","publisher":{"@id":"/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"es"},{"@type":"Organization","@id":"/#organization","name":"JAH do Açaí - El Mejor Self-Service de Açaí y Helado","url":"/","logo":{"@type":"ImageObject","inLanguage":"es","@id":"/#/schema/logo/image/","url":"/wp-content/uploads/2021/09/logo-jah-retina-214x100-1.png","contentUrl":"/wp-content/uploads/2021/09/logo-jah-retina-214x100-1.png","width":214,"height":100,"caption":"JAH do Açaí - El Mejor Self-Service de Açaí y Helado"},"image":{"@id":"/#/schema/logo/image/"},"sameAs":["https://www.facebook.com/jahacaisorvetespicoles/","https://www.instagram.com/jahdoacai/","https://www.linkedin.com/company/jah-do-açaí-penguins/","https://www.youtube.com/channel/UCsK4J3pDw0_zNleYWihpN_g"]},{"@type":"Person","@id":"/#/schema/person/aa8cef761cccfcc1d3cf6b8b0f7593ea","name":"JAH","image":{"@type":"ImageObject","inLanguage":"es","@id":"https://secure.gravatar.com/avatar/e3aa479baa1f55078ff19fbfffc5b98845a2fb57c6ee8703b24c6a7cd180b1cb?s=96&d=mm&r=g","url":"https://secure.gravatar.com/avatar/e3aa479baa1f55078ff19fbfffc5b98845a2fb57c6ee8703b24c6a7cd180b1cb?s=96&d=mm&r=g","contentUrl":"https://secure.gravatar.com/avatar/e3aa479baa1f55078ff19fbfffc5b98845a2fb57c6ee8703b24c6a7cd180b1cb?s=96&d=mm&r=g","caption":"JAH"},"url":"/author/user_jah_admin/"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<script type='application/javascript'  id='pys-version-script'>console.log('PixelYourSite Free version 11.2.0.7');</script>
+<link rel="alternate" type="application/rss+xml" title="Feed de JAH do Açaí »" href="/feed/" />
+<link data-minify="1" rel="stylesheet" type="text/css" href="/wp-content/cache/min/1/oxv5rlw.css?ver=1784316386"><style id='wp-img-auto-sizes-contain-inline-css'>
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<link data-minify="1" rel='stylesheet' id='swiper-css' href='/wp-content/cache/min/1/wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min.css?ver=1784316386' media='all' />
+<link rel='stylesheet' id='e-swiper-css' href='/wp-content/plugins/elementor/assets/css/conditionals/e-swiper.min.css?ver=3.35.8' media='all' />
+<style id='wp-emoji-styles-inline-css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+<link rel='stylesheet' id='wp-block-library-css' href='/wp-includes/css/dist/block-library/style.min.css?ver=45c4f9250e7b7970b11234a6cf8c01d8' media='all' />
+<style id='outermost-icon-block-style-inline-css'>
+.wp-block-outermost-icon-block{display:flex;line-height:0}.wp-block-outermost-icon-block.has-border-color{border:none}.wp-block-outermost-icon-block .has-icon-color svg,.wp-block-outermost-icon-block.has-icon-color svg{color:currentColor}.wp-block-outermost-icon-block .has-icon-color:not(.has-no-icon-fill-color) svg,.wp-block-outermost-icon-block.has-icon-color:not(.has-no-icon-fill-color) svg{fill:currentColor}.wp-block-outermost-icon-block .icon-container{box-sizing:border-box}.wp-block-outermost-icon-block a,.wp-block-outermost-icon-block svg{height:100%;transition:transform .1s ease-in-out;width:100%}.wp-block-outermost-icon-block a:hover{transform:scale(1.1)}.wp-block-outermost-icon-block svg{transform:rotate(var(--outermost--icon-block--transform-rotate,0deg)) scaleX(var(--outermost--icon-block--transform-scale-x,1)) scaleY(var(--outermost--icon-block--transform-scale-y,1))}.wp-block-outermost-icon-block .rotate-90,.wp-block-outermost-icon-block.rotate-90{--outermost--icon-block--transform-rotate:90deg}.wp-block-outermost-icon-block .rotate-180,.wp-block-outermost-icon-block.rotate-180{--outermost--icon-block--transform-rotate:180deg}.wp-block-outermost-icon-block .rotate-270,.wp-block-outermost-icon-block.rotate-270{--outermost--icon-block--transform-rotate:270deg}.wp-block-outermost-icon-block .flip-horizontal,.wp-block-outermost-icon-block.flip-horizontal{--outermost--icon-block--transform-scale-x:-1}.wp-block-outermost-icon-block .flip-vertical,.wp-block-outermost-icon-block.flip-vertical{--outermost--icon-block--transform-scale-y:-1}.wp-block-outermost-icon-block .flip-vertical.flip-horizontal,.wp-block-outermost-icon-block.flip-vertical.flip-horizontal{--outermost--icon-block--transform-scale-x:-1;--outermost--icon-block--transform-scale-y:-1}
+
+/*# sourceURL=/wp-content/plugins/icon-block/build/style.css */
+</style>
+<style id='global-styles-inline-css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}:root { --wp--style--global--content-size: 800px;--wp--style--global--wide-size: 1200px; }:where(body) { margin: 0; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.wp-site-blocks) > * { margin-block-start: 24px; margin-block-end: 0; }:where(.wp-site-blocks) > :first-child { margin-block-start: 0; }:where(.wp-site-blocks) > :last-child { margin-block-end: 0; }:root { --wp--style--block-gap: 24px; }:root :where(.is-layout-flow) > :first-child{margin-block-start: 0;}:root :where(.is-layout-flow) > :last-child{margin-block-end: 0;}:root :where(.is-layout-flow) > *{margin-block-start: 24px;margin-block-end: 0;}:root :where(.is-layout-constrained) > :first-child{margin-block-start: 0;}:root :where(.is-layout-constrained) > :last-child{margin-block-end: 0;}:root :where(.is-layout-constrained) > *{margin-block-start: 24px;margin-block-end: 0;}:root :where(.is-layout-flex){gap: 24px;}:root :where(.is-layout-grid){gap: 24px;}.is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}a:where(:not(.wp-element-button)){text-decoration: underline;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+<link data-minify="1" rel='stylesheet' id='woocommerce-layout-css' href='/wp-content/cache/min/1/wp-content/plugins/woocommerce/assets/css/woocommerce-layout.css?ver=1784316386' media='all' />
+<link data-minify="1" rel='stylesheet' id='woocommerce-smallscreen-css' href='/wp-content/cache/min/1/wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen.css?ver=1784316386' media='only screen and (max-width: 768px)' />
+<link data-minify="1" rel='stylesheet' id='woocommerce-general-css' href='/wp-content/cache/background-css/1/jahdoacai.com.br/wp-content/cache/min/1/wp-content/plugins/woocommerce/assets/css/woocommerce.css?ver=1784316386&wpr_t=1784378090' media='all' />
+<style id='woocommerce-inline-inline-css'>
+.woocommerce form .form-row .required { visibility: visible; }
+/*# sourceURL=woocommerce-inline-inline-css */
+</style>
+<link data-minify="1" rel='stylesheet' id='brands-styles-css' href='/wp-content/cache/min/1/wp-content/plugins/woocommerce/assets/css/brands.css?ver=1784316386' media='all' />
+<link data-minify="1" rel='stylesheet' id='hello-elementor-css' href='/wp-content/cache/min/1/wp-content/themes/hello-elementor/assets/css/reset.css?ver=1784316386' media='all' />
+<link data-minify="1" rel='stylesheet' id='hello-elementor-theme-style-css' href='/wp-content/cache/min/1/wp-content/themes/hello-elementor/assets/css/theme.css?ver=1784316386' media='all' />
+<link data-minify="1" rel='stylesheet' id='hello-elementor-header-footer-css' href='/wp-content/cache/min/1/wp-content/themes/hello-elementor/assets/css/header-footer.css?ver=1784316386' media='all' />
+<link rel='stylesheet' id='elementor-frontend-css' href='/wp-content/uploads/elementor/css/custom-frontend.min.css?ver=1784316386' media='all' />
+<style id='elementor-frontend-inline-css'>
+@-webkit-keyframes ha_fadeIn{0%{opacity:0}to{opacity:1}}@keyframes ha_fadeIn{0%{opacity:0}to{opacity:1}}@-webkit-keyframes ha_zoomIn{0%{opacity:0;-webkit-transform:scale3d(.3,.3,.3);transform:scale3d(.3,.3,.3)}50%{opacity:1}}@keyframes ha_zoomIn{0%{opacity:0;-webkit-transform:scale3d(.3,.3,.3);transform:scale3d(.3,.3,.3)}50%{opacity:1}}@-webkit-keyframes ha_rollIn{0%{opacity:0;-webkit-transform:translate3d(-100%,0,0) rotate3d(0,0,1,-120deg);transform:translate3d(-100%,0,0) rotate3d(0,0,1,-120deg)}to{opacity:1}}@keyframes ha_rollIn{0%{opacity:0;-webkit-transform:translate3d(-100%,0,0) rotate3d(0,0,1,-120deg);transform:translate3d(-100%,0,0) rotate3d(0,0,1,-120deg)}to{opacity:1}}@-webkit-keyframes ha_bounce{0%,20%,53%,to{-webkit-animation-timing-function:cubic-bezier(.215,.61,.355,1);animation-timing-function:cubic-bezier(.215,.61,.355,1)}40%,43%{-webkit-transform:translate3d(0,-30px,0) scaleY(1.1);transform:translate3d(0,-30px,0) scaleY(1.1);-webkit-animation-timing-function:cubic-bezier(.755,.05,.855,.06);animation-timing-function:cubic-bezier(.755,.05,.855,.06)}70%{-webkit-transform:translate3d(0,-15px,0) scaleY(1.05);transform:translate3d(0,-15px,0) scaleY(1.05);-webkit-animation-timing-function:cubic-bezier(.755,.05,.855,.06);animation-timing-function:cubic-bezier(.755,.05,.855,.06)}80%{-webkit-transition-timing-function:cubic-bezier(.215,.61,.355,1);transition-timing-function:cubic-bezier(.215,.61,.355,1);-webkit-transform:translate3d(0,0,0) scaleY(.95);transform:translate3d(0,0,0) scaleY(.95)}90%{-webkit-transform:translate3d(0,-4px,0) scaleY(1.02);transform:translate3d(0,-4px,0) scaleY(1.02)}}@keyframes ha_bounce{0%,20%,53%,to{-webkit-animation-timing-function:cubic-bezier(.215,.61,.355,1);animation-timing-function:cubic-bezier(.215,.61,.355,1)}40%,43%{-webkit-transform:translate3d(0,-30px,0) scaleY(1.1);transform:translate3d(0,-30px,0) scaleY(1.1);-webkit-animation-timing-function:cubic-bezier(.755,.05,.855,.06);animation-timing-function:cubic-bezier(.755,.05,.855,.06)}70%{-webkit-transform:translate3d(0,-15px,0) scaleY(1.05);transform:translate3d(0,-15px,0) scaleY(1.05);-webkit-animation-timing-function:cubic-bezier(.755,.05,.855,.06);animation-timing-function:cubic-bezier(.755,.05,.855,.06)}80%{-webkit-transition-timing-function:cubic-bezier(.215,.61,.355,1);transition-timing-function:cubic-bezier(.215,.61,.355,1);-webkit-transform:translate3d(0,0,0) scaleY(.95);transform:translate3d(0,0,0) scaleY(.95)}90%{-webkit-transform:translate3d(0,-4px,0) scaleY(1.02);transform:translate3d(0,-4px,0) scaleY(1.02)}}@-webkit-keyframes ha_bounceIn{0%,20%,40%,60%,80%,to{-webkit-animation-timing-function:cubic-bezier(.215,.61,.355,1);animation-timing-function:cubic-bezier(.215,.61,.355,1)}0%{opacity:0;-webkit-transform:scale3d(.3,.3,.3);transform:scale3d(.3,.3,.3)}20%{-webkit-transform:scale3d(1.1,1.1,1.1);transform:scale3d(1.1,1.1,1.1)}40%{-webkit-transform:scale3d(.9,.9,.9);transform:scale3d(.9,.9,.9)}60%{opacity:1;-webkit-transform:scale3d(1.03,1.03,1.03);transform:scale3d(1.03,1.03,1.03)}80%{-webkit-transform:scale3d(.97,.97,.97);transform:scale3d(.97,.97,.97)}to{opacity:1}}@keyframes ha_bounceIn{0%,20%,40%,60%,80%,to{-webkit-animation-timing-function:cubic-bezier(.215,.61,.355,1);animation-timing-function:cubic-bezier(.215,.61,.355,1)}0%{opacity:0;-webkit-transform:scale3d(.3,.3,.3);transform:scale3d(.3,.3,.3)}20%{-webkit-transform:scale3d(1.1,1.1,1.1);transform:scale3d(1.1,1.1,1.1)}40%{-webkit-transform:scale3d(.9,.9,.9);transform:scale3d(.9,.9,.9)}60%{opacity:1;-webkit-transform:scale3d(1.03,1.03,1.03);transform:scale3d(1.03,1.03,1.03)}80%{-webkit-transform:scale3d(.97,.97,.97);transform:scale3d(.97,.97,.97)}to{opacity:1}}@-webkit-keyframes ha_flipInX{0%{opacity:0;-webkit-transform:perspective(400px) rotate3d(1,0,0,90deg);transform:perspective(400px) rotate3d(1,0,0,90deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}40%{-webkit-transform:perspective(400px) rotate3d(1,0,0,-20deg);transform:perspective(400px) rotate3d(1,0,0,-20deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}60%{opacity:1;-webkit-transform:perspective(400px) rotate3d(1,0,0,10deg);transform:perspective(400px) rotate3d(1,0,0,10deg)}80%{-webkit-transform:perspective(400px) rotate3d(1,0,0,-5deg);transform:perspective(400px) rotate3d(1,0,0,-5deg)}}@keyframes ha_flipInX{0%{opacity:0;-webkit-transform:perspective(400px) rotate3d(1,0,0,90deg);transform:perspective(400px) rotate3d(1,0,0,90deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}40%{-webkit-transform:perspective(400px) rotate3d(1,0,0,-20deg);transform:perspective(400px) rotate3d(1,0,0,-20deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}60%{opacity:1;-webkit-transform:perspective(400px) rotate3d(1,0,0,10deg);transform:perspective(400px) rotate3d(1,0,0,10deg)}80%{-webkit-transform:perspective(400px) rotate3d(1,0,0,-5deg);transform:perspective(400px) rotate3d(1,0,0,-5deg)}}@-webkit-keyframes ha_flipInY{0%{opacity:0;-webkit-transform:perspective(400px) rotate3d(0,1,0,90deg);transform:perspective(400px) rotate3d(0,1,0,90deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}40%{-webkit-transform:perspective(400px) rotate3d(0,1,0,-20deg);transform:perspective(400px) rotate3d(0,1,0,-20deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}60%{opacity:1;-webkit-transform:perspective(400px) rotate3d(0,1,0,10deg);transform:perspective(400px) rotate3d(0,1,0,10deg)}80%{-webkit-transform:perspective(400px) rotate3d(0,1,0,-5deg);transform:perspective(400px) rotate3d(0,1,0,-5deg)}}@keyframes ha_flipInY{0%{opacity:0;-webkit-transform:perspective(400px) rotate3d(0,1,0,90deg);transform:perspective(400px) rotate3d(0,1,0,90deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}40%{-webkit-transform:perspective(400px) rotate3d(0,1,0,-20deg);transform:perspective(400px) rotate3d(0,1,0,-20deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}60%{opacity:1;-webkit-transform:perspective(400px) rotate3d(0,1,0,10deg);transform:perspective(400px) rotate3d(0,1,0,10deg)}80%{-webkit-transform:perspective(400px) rotate3d(0,1,0,-5deg);transform:perspective(400px) rotate3d(0,1,0,-5deg)}}@-webkit-keyframes ha_swing{20%{-webkit-transform:rotate3d(0,0,1,15deg);transform:rotate3d(0,0,1,15deg)}40%{-webkit-transform:rotate3d(0,0,1,-10deg);transform:rotate3d(0,0,1,-10deg)}60%{-webkit-transform:rotate3d(0,0,1,5deg);transform:rotate3d(0,0,1,5deg)}80%{-webkit-transform:rotate3d(0,0,1,-5deg);transform:rotate3d(0,0,1,-5deg)}}@keyframes ha_swing{20%{-webkit-transform:rotate3d(0,0,1,15deg);transform:rotate3d(0,0,1,15deg)}40%{-webkit-transform:rotate3d(0,0,1,-10deg);transform:rotate3d(0,0,1,-10deg)}60%{-webkit-transform:rotate3d(0,0,1,5deg);transform:rotate3d(0,0,1,5deg)}80%{-webkit-transform:rotate3d(0,0,1,-5deg);transform:rotate3d(0,0,1,-5deg)}}@-webkit-keyframes ha_slideInDown{0%{visibility:visible;-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0)}}@keyframes ha_slideInDown{0%{visibility:visible;-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0)}}@-webkit-keyframes ha_slideInUp{0%{visibility:visible;-webkit-transform:translate3d(0,100%,0);transform:translate3d(0,100%,0)}}@keyframes ha_slideInUp{0%{visibility:visible;-webkit-transform:translate3d(0,100%,0);transform:translate3d(0,100%,0)}}@-webkit-keyframes ha_slideInLeft{0%{visibility:visible;-webkit-transform:translate3d(-100%,0,0);transform:translate3d(-100%,0,0)}}@keyframes ha_slideInLeft{0%{visibility:visible;-webkit-transform:translate3d(-100%,0,0);transform:translate3d(-100%,0,0)}}@-webkit-keyframes ha_slideInRight{0%{visibility:visible;-webkit-transform:translate3d(100%,0,0);transform:translate3d(100%,0,0)}}@keyframes ha_slideInRight{0%{visibility:visible;-webkit-transform:translate3d(100%,0,0);transform:translate3d(100%,0,0)}}.ha_fadeIn{-webkit-animation-name:ha_fadeIn;animation-name:ha_fadeIn}.ha_zoomIn{-webkit-animation-name:ha_zoomIn;animation-name:ha_zoomIn}.ha_rollIn{-webkit-animation-name:ha_rollIn;animation-name:ha_rollIn}.ha_bounce{-webkit-transform-origin:center bottom;-ms-transform-origin:center bottom;transform-origin:center bottom;-webkit-animation-name:ha_bounce;animation-name:ha_bounce}.ha_bounceIn{-webkit-animation-name:ha_bounceIn;animation-name:ha_bounceIn;-webkit-animation-duration:.75s;-webkit-animation-duration:calc(var(--animate-duration)*.75);animation-duration:.75s;animation-duration:calc(var(--animate-duration)*.75)}.ha_flipInX,.ha_flipInY{-webkit-animation-name:ha_flipInX;animation-name:ha_flipInX;-webkit-backface-visibility:visible!important;backface-visibility:visible!important}.ha_flipInY{-webkit-animation-name:ha_flipInY;animation-name:ha_flipInY}.ha_swing{-webkit-transform-origin:top center;-ms-transform-origin:top center;transform-origin:top center;-webkit-animation-name:ha_swing;animation-name:ha_swing}.ha_slideInDown{-webkit-animation-name:ha_slideInDown;animation-name:ha_slideInDown}.ha_slideInUp{-webkit-animation-name:ha_slideInUp;animation-name:ha_slideInUp}.ha_slideInLeft{-webkit-animation-name:ha_slideInLeft;animation-name:ha_slideInLeft}.ha_slideInRight{-webkit-animation-name:ha_slideInRight;animation-name:ha_slideInRight}.ha-css-transform-yes{-webkit-transition-duration:var(--ha-tfx-transition-duration, .2s);transition-duration:var(--ha-tfx-transition-duration, .2s);-webkit-transition-property:-webkit-transform;transition-property:transform;transition-property:transform,-webkit-transform;-webkit-transform:translate(var(--ha-tfx-translate-x, 0),var(--ha-tfx-translate-y, 0)) scale(var(--ha-tfx-scale-x, 1),var(--ha-tfx-scale-y, 1)) skew(var(--ha-tfx-skew-x, 0),var(--ha-tfx-skew-y, 0)) rotateX(var(--ha-tfx-rotate-x, 0)) rotateY(var(--ha-tfx-rotate-y, 0)) rotateZ(var(--ha-tfx-rotate-z, 0));transform:translate(var(--ha-tfx-translate-x, 0),var(--ha-tfx-translate-y, 0)) scale(var(--ha-tfx-scale-x, 1),var(--ha-tfx-scale-y, 1)) skew(var(--ha-tfx-skew-x, 0),var(--ha-tfx-skew-y, 0)) rotateX(var(--ha-tfx-rotate-x, 0)) rotateY(var(--ha-tfx-rotate-y, 0)) rotateZ(var(--ha-tfx-rotate-z, 0))}.ha-css-transform-yes:hover{-webkit-transform:translate(var(--ha-tfx-translate-x-hover, var(--ha-tfx-translate-x, 0)),var(--ha-tfx-translate-y-hover, var(--ha-tfx-translate-y, 0))) scale(var(--ha-tfx-scale-x-hover, var(--ha-tfx-scale-x, 1)),var(--ha-tfx-scale-y-hover, var(--ha-tfx-scale-y, 1))) skew(var(--ha-tfx-skew-x-hover, var(--ha-tfx-skew-x, 0)),var(--ha-tfx-skew-y-hover, var(--ha-tfx-skew-y, 0))) rotateX(var(--ha-tfx-rotate-x-hover, var(--ha-tfx-rotate-x, 0))) rotateY(var(--ha-tfx-rotate-y-hover, var(--ha-tfx-rotate-y, 0))) rotateZ(var(--ha-tfx-rotate-z-hover, var(--ha-tfx-rotate-z, 0)));transform:translate(var(--ha-tfx-translate-x-hover, var(--ha-tfx-translate-x, 0)),var(--ha-tfx-translate-y-hover, var(--ha-tfx-translate-y, 0))) scale(var(--ha-tfx-scale-x-hover, var(--ha-tfx-scale-x, 1)),var(--ha-tfx-scale-y-hover, var(--ha-tfx-scale-y, 1))) skew(var(--ha-tfx-skew-x-hover, var(--ha-tfx-skew-x, 0)),var(--ha-tfx-skew-y-hover, var(--ha-tfx-skew-y, 0))) rotateX(var(--ha-tfx-rotate-x-hover, var(--ha-tfx-rotate-x, 0))) rotateY(var(--ha-tfx-rotate-y-hover, var(--ha-tfx-rotate-y, 0))) rotateZ(var(--ha-tfx-rotate-z-hover, var(--ha-tfx-rotate-z, 0)))}.happy-addon>.elementor-widget-container{word-wrap:break-word;overflow-wrap:break-word}.happy-addon>.elementor-widget-container,.happy-addon>.elementor-widget-container *{-webkit-box-sizing:border-box;box-sizing:border-box}.happy-addon:not(:has(.elementor-widget-container)),.happy-addon:not(:has(.elementor-widget-container)) *{-webkit-box-sizing:border-box;box-sizing:border-box;word-wrap:break-word;overflow-wrap:break-word}.happy-addon p:empty{display:none}.happy-addon .elementor-inline-editing{min-height:auto!important}.happy-addon-pro img{max-width:100%;height:auto;-o-object-fit:cover;object-fit:cover}.ha-screen-reader-text{position:absolute;overflow:hidden;clip:rect(1px,1px,1px,1px);margin:-1px;padding:0;width:1px;height:1px;border:0;word-wrap:normal!important;-webkit-clip-path:inset(50%);clip-path:inset(50%)}.ha-has-bg-overlay>.elementor-widget-container{position:relative;z-index:1}.ha-has-bg-overlay>.elementor-widget-container:before{position:absolute;top:0;left:0;z-index:-1;width:100%;height:100%;content:""}.ha-has-bg-overlay:not(:has(.elementor-widget-container)){position:relative;z-index:1}.ha-has-bg-overlay:not(:has(.elementor-widget-container)):before{position:absolute;top:0;left:0;z-index:-1;width:100%;height:100%;content:""}.ha-popup--is-enabled .ha-js-popup,.ha-popup--is-enabled .ha-js-popup img{cursor:-webkit-zoom-in!important;cursor:zoom-in!important}.mfp-wrap .mfp-arrow,.mfp-wrap .mfp-close{background-color:transparent}.mfp-wrap .mfp-arrow:focus,.mfp-wrap .mfp-close:focus{outline-width:thin}.ha-advanced-tooltip-enable{position:relative;cursor:pointer;--ha-tooltip-arrow-color:black;--ha-tooltip-arrow-distance:0}.ha-advanced-tooltip-enable .ha-advanced-tooltip-content{position:absolute;z-index:999;display:none;padding:5px 0;width:120px;height:auto;border-radius:6px;background-color:#000;color:#fff;text-align:center;opacity:0}.ha-advanced-tooltip-enable .ha-advanced-tooltip-content::after{position:absolute;border-width:5px;border-style:solid;content:""}.ha-advanced-tooltip-enable .ha-advanced-tooltip-content.no-arrow::after{visibility:hidden}.ha-advanced-tooltip-enable .ha-advanced-tooltip-content.show{display:inline-block;opacity:1}.ha-advanced-tooltip-enable.ha-advanced-tooltip-top .ha-advanced-tooltip-content,body[data-elementor-device-mode=tablet] .ha-advanced-tooltip-enable.ha-advanced-tooltip-tablet-top .ha-advanced-tooltip-content{top:unset;right:0;bottom:calc(101% + var(--ha-tooltip-arrow-distance));left:0;margin:0 auto}.ha-advanced-tooltip-enable.ha-advanced-tooltip-top .ha-advanced-tooltip-content::after,body[data-elementor-device-mode=tablet] .ha-advanced-tooltip-enable.ha-advanced-tooltip-tablet-top .ha-advanced-tooltip-content::after{top:100%;right:unset;bottom:unset;left:50%;border-color:var(--ha-tooltip-arrow-color) transparent transparent transparent;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%)}.ha-advanced-tooltip-enable.ha-advanced-tooltip-bottom .ha-advanced-tooltip-content,body[data-elementor-device-mode=tablet] .ha-advanced-tooltip-enable.ha-advanced-tooltip-tablet-bottom .ha-advanced-tooltip-content{top:calc(101% + var(--ha-tooltip-arrow-distance));right:0;bottom:unset;left:0;margin:0 auto}.ha-advanced-tooltip-enable.ha-advanced-tooltip-bottom .ha-advanced-tooltip-content::after,body[data-elementor-device-mode=tablet] .ha-advanced-tooltip-enable.ha-advanced-tooltip-tablet-bottom .ha-advanced-tooltip-content::after{top:unset;right:unset;bottom:100%;left:50%;border-color:transparent transparent var(--ha-tooltip-arrow-color) transparent;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%)}.ha-advanced-tooltip-enable.ha-advanced-tooltip-left .ha-advanced-tooltip-content,body[data-elementor-device-mode=tablet] .ha-advanced-tooltip-enable.ha-advanced-tooltip-tablet-left .ha-advanced-tooltip-content{top:50%;right:calc(101% + var(--ha-tooltip-arrow-distance));bottom:unset;left:unset;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}.ha-advanced-tooltip-enable.ha-advanced-tooltip-left .ha-advanced-tooltip-content::after,body[data-elementor-device-mode=tablet] .ha-advanced-tooltip-enable.ha-advanced-tooltip-tablet-left .ha-advanced-tooltip-content::after{top:50%;right:unset;bottom:unset;left:100%;border-color:transparent transparent transparent var(--ha-tooltip-arrow-color);-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}.ha-advanced-tooltip-enable.ha-advanced-tooltip-right .ha-advanced-tooltip-content,body[data-elementor-device-mode=tablet] .ha-advanced-tooltip-enable.ha-advanced-tooltip-tablet-right .ha-advanced-tooltip-content{top:50%;right:unset;bottom:unset;left:calc(101% + var(--ha-tooltip-arrow-distance));-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}.ha-advanced-tooltip-enable.ha-advanced-tooltip-right .ha-advanced-tooltip-content::after,body[data-elementor-device-mode=tablet] .ha-advanced-tooltip-enable.ha-advanced-tooltip-tablet-right .ha-advanced-tooltip-content::after{top:50%;right:100%;bottom:unset;left:unset;border-color:transparent var(--ha-tooltip-arrow-color) transparent transparent;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}body[data-elementor-device-mode=mobile] .ha-advanced-tooltip-enable.ha-advanced-tooltip-mobile-top .ha-advanced-tooltip-content{top:unset;right:0;bottom:calc(101% + var(--ha-tooltip-arrow-distance));left:0;margin:0 auto}body[data-elementor-device-mode=mobile] .ha-advanced-tooltip-enable.ha-advanced-tooltip-mobile-top .ha-advanced-tooltip-content::after{top:100%;right:unset;bottom:unset;left:50%;border-color:var(--ha-tooltip-arrow-color) transparent transparent transparent;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%)}body[data-elementor-device-mode=mobile] .ha-advanced-tooltip-enable.ha-advanced-tooltip-mobile-bottom .ha-advanced-tooltip-content{top:calc(101% + var(--ha-tooltip-arrow-distance));right:0;bottom:unset;left:0;margin:0 auto}body[data-elementor-device-mode=mobile] .ha-advanced-tooltip-enable.ha-advanced-tooltip-mobile-bottom .ha-advanced-tooltip-content::after{top:unset;right:unset;bottom:100%;left:50%;border-color:transparent transparent var(--ha-tooltip-arrow-color) transparent;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%)}body[data-elementor-device-mode=mobile] .ha-advanced-tooltip-enable.ha-advanced-tooltip-mobile-left .ha-advanced-tooltip-content{top:50%;right:calc(101% + var(--ha-tooltip-arrow-distance));bottom:unset;left:unset;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}body[data-elementor-device-mode=mobile] .ha-advanced-tooltip-enable.ha-advanced-tooltip-mobile-left .ha-advanced-tooltip-content::after{top:50%;right:unset;bottom:unset;left:100%;border-color:transparent transparent transparent var(--ha-tooltip-arrow-color);-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}body[data-elementor-device-mode=mobile] .ha-advanced-tooltip-enable.ha-advanced-tooltip-mobile-right .ha-advanced-tooltip-content{top:50%;right:unset;bottom:unset;left:calc(101% + var(--ha-tooltip-arrow-distance));-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}body[data-elementor-device-mode=mobile] .ha-advanced-tooltip-enable.ha-advanced-tooltip-mobile-right .ha-advanced-tooltip-content::after{top:50%;right:100%;bottom:unset;left:unset;border-color:transparent var(--ha-tooltip-arrow-color) transparent transparent;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}body.elementor-editor-active .happy-addon.ha-gravityforms .gform_wrapper{display:block!important}.ha-scroll-to-top-wrap.ha-scroll-to-top-hide{display:none}.ha-scroll-to-top-wrap.edit-mode,.ha-scroll-to-top-wrap.single-page-off{display:none!important}.ha-scroll-to-top-button{position:fixed;right:15px;bottom:15px;z-index:9999;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;align-items:center;-ms-flex-align:center;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;width:50px;height:50px;border-radius:50px;background-color:#5636d1;color:#fff;text-align:center;opacity:1;cursor:pointer;-webkit-transition:all .3s;transition:all .3s}.ha-scroll-to-top-button i{color:#fff;font-size:16px}.ha-scroll-to-top-button:hover{background-color:#e2498a}
+/*# sourceURL=elementor-frontend-inline-css */
+</style>
+<link rel='stylesheet' id='elementor-post-89-css' href='/wp-content/uploads/elementor/css/post-89.css?ver=1784316386' media='all' />
+<link data-minify="1" rel='stylesheet' id='jet-woo-builder-css' href='/wp-content/cache/min/1/wp-content/plugins/jet-woo-builder/assets/css/frontend.css?ver=1784316386' media='all' />
+<style id='jet-woo-builder-inline-css'>
+@font-face {
+				font-family: "WooCommerce";
+				font-weight: normal;
+				font-style: normal;
+				src: url("/wp-content/plugins/woocommerce/assets/fonts/WooCommerce.eot");
+				src: url("/wp-content/plugins/woocommerce/assets/fonts/WooCommerce.eot?#iefix") format("embedded-opentype"),
+					 url("/wp-content/plugins/woocommerce/assets/fonts/WooCommerce.woff") format("woff"),
+					 url("/wp-content/plugins/woocommerce/assets/fonts/WooCommerce.ttf") format("truetype"),
+					 url("/wp-content/plugins/woocommerce/assets/fonts/WooCommerce.svg#WooCommerce") format("svg");
+			}
+/*# sourceURL=jet-woo-builder-inline-css */
+</style>
+<link rel='stylesheet' id='widget-image-css' href='/wp-content/plugins/elementor/assets/css/widget-image.min.css?ver=3.35.8' media='all' />
+<link rel='stylesheet' id='e-sticky-css' href='/wp-content/plugins/pro-elements/assets/css/modules/sticky.min.css?ver=4.1.0' media='all' />
+<link rel='stylesheet' id='widget-heading-css' href='/wp-content/plugins/elementor/assets/css/widget-heading.min.css?ver=3.35.8' media='all' />
+<link rel='stylesheet' id='widget-icon-list-css' href='/wp-content/uploads/elementor/css/custom-widget-icon-list.min.css?ver=1784316386' media='all' />
+<link rel='stylesheet' id='widget-divider-css' href='/wp-content/plugins/elementor/assets/css/widget-divider.min.css?ver=3.35.8' media='all' />
+<link rel='stylesheet' id='widget-social-icons-css' href='/wp-content/plugins/elementor/assets/css/widget-social-icons.min.css?ver=3.35.8' media='all' />
+<link rel='stylesheet' id='e-apple-webkit-css' href='/wp-content/uploads/elementor/css/custom-apple-webkit.min.css?ver=1784316386' media='all' />
+<link rel='stylesheet' id='widget-post-info-css' href='/wp-content/plugins/pro-elements/assets/css/widget-post-info.min.css?ver=4.1.0' media='all' />
+<link rel='stylesheet' id='widget-author-box-css' href='/wp-content/plugins/pro-elements/assets/css/widget-author-box.min.css?ver=4.1.0' media='all' />
+<link rel='stylesheet' id='widget-posts-css' href='/wp-content/plugins/pro-elements/assets/css/widget-posts.min.css?ver=4.1.0' media='all' />
+<link rel='stylesheet' id='widget-form-css' href='/wp-content/plugins/pro-elements/assets/css/widget-form.min.css?ver=4.1.0' media='all' />
+<link rel='stylesheet' id='widget-image-carousel-css' href='/wp-content/plugins/elementor/assets/css/widget-image-carousel.min.css?ver=3.35.8' media='all' />
+<link data-minify="1" rel='stylesheet' id='font-awesome-5-all-css' href='/wp-content/cache/min/1/wp-content/plugins/elementor/assets/lib/font-awesome/css/all.min.css?ver=1784316386' media='all' />
+<link rel='stylesheet' id='font-awesome-4-shim-css' href='/wp-content/plugins/elementor/assets/lib/font-awesome/css/v4-shims.min.css?ver=3.35.8' media='all' />
+<link rel='stylesheet' id='elementor-post-10373-css' href='/wp-content/uploads/elementor/css/post-10373.css?ver=1784316386' media='all' />
+<link data-minify="1" rel='stylesheet' id='happy-icons-css' href='/wp-content/cache/min/1/wp-content/plugins/happy-elementor-addons/assets/fonts/style.min.css?ver=1784316386' media='all' />
+<link data-minify="1" rel='stylesheet' id='font-awesome-css' href='/wp-content/cache/min/1/wp-content/plugins/elementor/assets/lib/font-awesome/css/font-awesome.min.css?ver=1784316386' media='all' />
+<style id='font-awesome-inline-css'>
+[data-font="FontAwesome"]:before {font-family: 'FontAwesome' !important;content: attr(data-icon) !important;speak: none !important;font-weight: normal !important;font-variant: normal !important;text-transform: none !important;line-height: 1 !important;font-style: normal !important;-webkit-font-smoothing: antialiased !important;-moz-osx-font-smoothing: grayscale !important;}
+/*# sourceURL=font-awesome-inline-css */
+</style>
+<link rel='stylesheet' id='elementor-post-9790-css' href='/wp-content/uploads/elementor/css/post-9790.css?ver=1784316386' media='all' />
+<link rel='stylesheet' id='elementor-post-1551-css' href='/wp-content/uploads/elementor/css/post-1551.css?ver=1784316386' media='all' />
+<style id='elementor-pro-custom-fonts-inline-css'>
+@font-face {
+	font-family: 'Breakers';
+	font-style: normal;
+	font-weight: 300;
+	font-display: auto;
+	src: url('/wp-content/uploads/2026/01/Breakers-Thin.eot');
+	src: url('/wp-content/uploads/2026/01/Breakers-Thin.eot?#iefix') format('embedded-opentype'),
+		url('/wp-content/uploads/2026/01/Breakers-Thin.woff2') format('woff2'),
+		url('/wp-content/uploads/2026/01/Breakers-Thin.woff') format('woff'),
+		url('/wp-content/uploads/2026/01/Breakers-Thin.ttf') format('truetype'),
+		url('/wp-content/uploads/2026/01/Breakers-Thin.svg#Breakers') format('svg');
+}
+@font-face {
+	font-family: 'Breakers';
+	font-style: normal;
+	font-weight: 400;
+	font-display: auto;
+	src: url('/wp-content/uploads/2026/01/Breakers-Regular.eot');
+	src: url('/wp-content/uploads/2026/01/Breakers-Regular.eot?#iefix') format('embedded-opentype'),
+		url('/wp-content/uploads/2026/01/Breakers-Regular.woff2') format('woff2'),
+		url('/wp-content/uploads/2026/01/Breakers-Regular.woff') format('woff'),
+		url('/wp-content/uploads/2026/01/Breakers-Regular.ttf') format('truetype'),
+		url('/wp-content/uploads/2026/01/Breakers-Regular.svg#Breakers') format('svg');
+}
+@font-face {
+	font-family: 'Breakers';
+	font-style: normal;
+	font-weight: 700;
+	font-display: auto;
+	src: url('/wp-content/uploads/2026/01/Breakers-Bold.eot');
+	src: url('/wp-content/uploads/2026/01/Breakers-Bold.eot?#iefix') format('embedded-opentype'),
+		url('/wp-content/uploads/2026/01/Breakers-Bold.woff2') format('woff2'),
+		url('/wp-content/uploads/2026/01/Breakers-Bold.woff') format('woff'),
+		url('/wp-content/uploads/2026/01/Breakers-Bold.ttf') format('truetype'),
+		url('/wp-content/uploads/2026/01/Breakers-Bold.svg#Breakers') format('svg');
+}
+@font-face {
+	font-family: 'Breakers';
+	font-style: normal;
+	font-weight: 800;
+	font-display: auto;
+	src: url('/wp-content/uploads/2026/01/Breakers-Black.eot');
+	src: url('/wp-content/uploads/2026/01/Breakers-Black.eot?#iefix') format('embedded-opentype'),
+		url('/wp-content/uploads/2026/01/Breakers-Black.woff2') format('woff2'),
+		url('/wp-content/uploads/2026/01/Breakers-Black.woff') format('woff'),
+		url('/wp-content/uploads/2026/01/Breakers-Black.ttf') format('truetype'),
+		url('/wp-content/uploads/2026/01/Breakers-Black.svg#Breakers') format('svg');
+}
+@font-face {
+	font-family: 'Breakers';
+	font-style: normal;
+	font-weight: 900;
+	font-display: auto;
+	src: url('/wp-content/uploads/2026/01/Breakers-Ultra.eot');
+	src: url('/wp-content/uploads/2026/01/Breakers-Ultra.eot?#iefix') format('embedded-opentype'),
+		url('/wp-content/uploads/2026/01/Breakers-Ultra.woff2') format('woff2'),
+		url('/wp-content/uploads/2026/01/Breakers-Ultra.woff') format('woff'),
+		url('/wp-content/uploads/2026/01/Breakers-Ultra.ttf') format('truetype'),
+		url('/wp-content/uploads/2026/01/Breakers-Ultra.svg#Breakers') format('svg');
+}
+
+/*# sourceURL=elementor-pro-custom-fonts-inline-css */
+</style>
+<style id='rocket-lazyload-inline-css'>
+.rll-youtube-player{position:relative;padding-bottom:56.23%;height:0;overflow:hidden;max-width:100%;}.rll-youtube-player:focus-within{outline: 2px solid currentColor;outline-offset: 5px;}.rll-youtube-player iframe{position:absolute;top:0;left:0;width:100%;height:100%;z-index:100;background:0 0}.rll-youtube-player img{bottom:0;display:block;left:0;margin:auto;max-width:100%;width:100%;position:absolute;right:0;top:0;border:none;height:auto;-webkit-transition:.4s all;-moz-transition:.4s all;transition:.4s all}.rll-youtube-player img:hover{-webkit-filter:brightness(75%)}.rll-youtube-player .play{height:100%;width:100%;left:0;top:0;position:absolute;background:var(--wpr-bg-5ca6d08b-f82f-4159-a32e-2d04c7abf910) no-repeat center;background-color: transparent !important;cursor:pointer;border:none;}.wp-embed-responsive .wp-has-aspect-ratio .rll-youtube-player{position:absolute;padding-bottom:0;width:100%;height:100%;top:0;bottom:0;left:0;right:0}
+/*# sourceURL=rocket-lazyload-inline-css */
+</style>
+<link data-minify="1" rel='stylesheet' id='elementor-gf-local-roboto-css' href='/wp-content/cache/min/1/wp-content/uploads/elementor/google-fonts/css/roboto.css?ver=1784316386' media='all' />
+<link data-minify="1" rel='stylesheet' id='elementor-gf-local-robotoslab-css' href='/wp-content/cache/min/1/wp-content/uploads/elementor/google-fonts/css/robotoslab.css?ver=1784316386' media='all' />
+<link data-minify="1" rel='stylesheet' id='elementor-gf-local-dmsans-css' href='/wp-content/cache/min/1/wp-content/uploads/elementor/google-fonts/css/dmsans.css?ver=1784316386' media='all' />
+<script id="jquery-core-js-extra">
+var pysFacebookRest = {"restApiUrl":"/wp-json/pys-facebook/v1/event","debug":""};
+//# sourceURL=jquery-core-js-extra
+</script>
+<script src="/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="rocketlazyloadscript" data-rocket-src="/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js" data-rocket-defer defer></script>
+<script src="/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.7.0-wc.10.3.7" id="wc-jquery-blockui-js" defer data-wp-strategy="defer"></script>
+<script id="wc-add-to-cart-js-extra">
+var wc_add_to_cart_params = {"ajax_url":"/wp-admin/admin-ajax.php","wc_ajax_url":"/?wc-ajax=%%endpoint%%","i18n_view_cart":"Ver carrinho","cart_url":"/carrinho/","is_cart":"","cart_redirect_after_add":"no"};
+//# sourceURL=wc-add-to-cart-js-extra
+</script>
+<script type="rocketlazyloadscript" data-rocket-src="/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=10.3.7" id="wc-add-to-cart-js" defer data-wp-strategy="defer"></script>
+<script type="rocketlazyloadscript" data-rocket-src="/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4-wc.10.3.7" id="wc-js-cookie-js" defer data-wp-strategy="defer"></script>
+<script id="woocommerce-js-extra">
+var woocommerce_params = {"ajax_url":"/wp-admin/admin-ajax.php","wc_ajax_url":"/?wc-ajax=%%endpoint%%","i18n_password_show":"Mostrar senha","i18n_password_hide":"Ocultar senha"};
+//# sourceURL=woocommerce-js-extra
+</script>
+<script type="rocketlazyloadscript" data-rocket-src="/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=10.3.7" id="woocommerce-js" defer data-wp-strategy="defer"></script>
+<script type="rocketlazyloadscript" data-rocket-src="/wp-content/plugins/elementor/assets/lib/font-awesome/js/v4-shims.min.js?ver=3.35.8" id="font-awesome-4-shim-js" data-rocket-defer defer></script>
+<script type="rocketlazyloadscript" data-rocket-src="/wp-content/plugins/happy-elementor-addons/assets/vendor/dom-purify/purify.min.js?ver=3.1.6" id="dom-purify-js" data-rocket-defer defer></script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KWPDHQQH');</script>
+<!-- End Google Tag Manager -->	<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
+	<meta name="generator" content="Elementor 3.35.8; features: e_font_icon_svg, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-auto">
+<!-- Meta Pixel Code -->
+
+<script>
+
+!function(f,b,e,v,n,t,s)
+
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '185155519472854');
+fbq('track', 'PageView');
+
+</script>
+
+<noscript><img height="1" width="1" style="display:none" src=https://www.facebook.com/tr?id=185155519472854&ev=PageView&noscript=1/></noscript>
+
+<!-- End Meta Pixel Code -->
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WTXC3446');</script>
+<!-- End Google Tag Manager -->
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "f1c88av24k");
+</script>
+
+<!-- Global site tag (gtag.js) - Google Ads -->
+
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=AW-10929263155"></script>
+
+<script>
+
+window.dataLayer = window.dataLayer || [];
+
+function gtag(){dataLayer.push(arguments);}
+
+gtag('js', new Date());
+
+gtag('config', 'AW-10929263155');
+
+</script> -->
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<!--<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169609415-1"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-169609415-1');
+</script> -->
+
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '480421636127495');
+fbq('track', 'PageView');
+</script>
+
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=480421636127495&ev=PageView&noscript=1"/></noscript>
+
+<style>
+.elementor-item:not(:hover):not(:focus):not(.elementor-item-active):not(.highlighted):after, .elementor-item:not(:hover):not(:focus):not(.elementor-item-active):not(.highlighted):before {
+	opacity: 1; }
+
+</style>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "f1c88av24k");
+</script>
+<script>
+		!function (w, d, t) {
+		  w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++
+)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var i="https://analytics.tiktok.com/i18n/pixel/events.js";ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=i,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script");n.type="text/javascript",n.async=!0,n.src=i+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
+		
+		  ttq.load('CEBJ5N3C77U87C9M0IUG');
+		  ttq.page();
+		}(window, document, 'ttq');
+	</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KWPDHQQH');</script>
+<!-- End Google Tag Manager -->
+			<style>
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
+					background-image: none !important;
+				}
+				@media screen and (max-height: 1024px) {
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+				@media screen and (max-height: 640px) {
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+			</style>
+			<link rel="icon" href="/wp-content/uploads/2025/04/cropped-monograma-32x32.webp" sizes="32x32" />
+<link rel="icon" href="/wp-content/uploads/2025/04/cropped-monograma-192x192.webp" sizes="192x192" />
+<link rel="apple-touch-icon" href="/wp-content/uploads/2025/04/cropped-monograma-180x180.webp" />
+<meta name="msapplication-TileImage" content="/wp-content/uploads/2025/04/cropped-monograma-270x270.webp" />
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '4578489185721707');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=4578489185721707&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+		<style id="wp-custom-css">
+			html:lang(en) .hd-en {display: none!important;}		</style>
+		<noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript><style id="wpr-lazyload-bg-container"></style><style id="wpr-lazyload-bg-exclusion"></style>
+<noscript>
+<style id="wpr-lazyload-bg-nostyle">.woocommerce .blockUI.blockOverlay::before{--wpr-bg-2e95807e-fc11-4820-bdb7-6dbcc65dc07b: url('/wp-content/plugins/woocommerce/assets/images/icons/loader.svg');}.woocommerce .loader::before{--wpr-bg-32706b81-7b26-4071-9ad8-4deab77b8729: url('/wp-content/plugins/woocommerce/assets/images/icons/loader.svg');}#add_payment_method #payment div.payment_box .wc-credit-card-form-card-cvc.visa,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-expiry.visa,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-number.visa,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-cvc.visa,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-expiry.visa,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-number.visa,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-cvc.visa,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-expiry.visa,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-number.visa{--wpr-bg-74fc6a3c-8842-43ba-b632-da8ab36b895c: url('/wp-content/plugins/woocommerce/assets/images/icons/credit-cards/visa.svg');}#add_payment_method #payment div.payment_box .wc-credit-card-form-card-cvc.mastercard,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-expiry.mastercard,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-number.mastercard,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-cvc.mastercard,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-expiry.mastercard,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-number.mastercard,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-cvc.mastercard,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-expiry.mastercard,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-number.mastercard{--wpr-bg-7ffb022b-0a52-478c-a887-86d882e99f57: url('/wp-content/plugins/woocommerce/assets/images/icons/credit-cards/mastercard.svg');}#add_payment_method #payment div.payment_box .wc-credit-card-form-card-cvc.laser,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-expiry.laser,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-number.laser,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-cvc.laser,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-expiry.laser,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-number.laser,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-cvc.laser,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-expiry.laser,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-number.laser{--wpr-bg-b221fbd8-8815-4113-b5b7-6b62c618010c: url('/wp-content/plugins/woocommerce/assets/images/icons/credit-cards/laser.svg');}#add_payment_method #payment div.payment_box .wc-credit-card-form-card-cvc.dinersclub,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-expiry.dinersclub,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-number.dinersclub,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-cvc.dinersclub,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-expiry.dinersclub,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-number.dinersclub,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-cvc.dinersclub,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-expiry.dinersclub,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-number.dinersclub{--wpr-bg-2fde5507-0fb2-4208-8b12-5747b544c730: url('/wp-content/plugins/woocommerce/assets/images/icons/credit-cards/diners.svg');}#add_payment_method #payment div.payment_box .wc-credit-card-form-card-cvc.maestro,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-expiry.maestro,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-number.maestro,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-cvc.maestro,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-expiry.maestro,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-number.maestro,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-cvc.maestro,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-expiry.maestro,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-number.maestro{--wpr-bg-c5fe048c-fbe0-479f-8d18-1dc3e0e94e5f: url('/wp-content/plugins/woocommerce/assets/images/icons/credit-cards/maestro.svg');}#add_payment_method #payment div.payment_box .wc-credit-card-form-card-cvc.jcb,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-expiry.jcb,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-number.jcb,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-cvc.jcb,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-expiry.jcb,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-number.jcb,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-cvc.jcb,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-expiry.jcb,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-number.jcb{--wpr-bg-0f7c422b-4da7-40f1-9252-25015f130a50: url('/wp-content/plugins/woocommerce/assets/images/icons/credit-cards/jcb.svg');}#add_payment_method #payment div.payment_box .wc-credit-card-form-card-cvc.amex,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-expiry.amex,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-number.amex,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-cvc.amex,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-expiry.amex,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-number.amex,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-cvc.amex,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-expiry.amex,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-number.amex{--wpr-bg-044e793e-82aa-438c-9723-7490018ae345: url('/wp-content/plugins/woocommerce/assets/images/icons/credit-cards/amex.svg');}#add_payment_method #payment div.payment_box .wc-credit-card-form-card-cvc.discover,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-expiry.discover,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-number.discover,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-cvc.discover,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-expiry.discover,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-number.discover,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-cvc.discover,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-expiry.discover,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-number.discover{--wpr-bg-bf75e711-ead2-4f7e-b512-854b38cbcb4b: url('/wp-content/plugins/woocommerce/assets/images/icons/credit-cards/discover.svg');}.rll-youtube-player .play{--wpr-bg-5ca6d08b-f82f-4159-a32e-2d04c7abf910: url('/wp-content/plugins/wp-rocket/assets/img/youtube.png');}</style>
+</noscript>
+<script type="application/javascript">const rocket_pairs = [{"selector":".woocommerce .blockUI.blockOverlay","style":".woocommerce .blockUI.blockOverlay::before{--wpr-bg-2e95807e-fc11-4820-bdb7-6dbcc65dc07b: url('\/wp-content\/plugins\/woocommerce\/assets\/images\/icons\/loader.svg');}","hash":"2e95807e-fc11-4820-bdb7-6dbcc65dc07b","url":"\/wp-content\/plugins\/woocommerce\/assets\/images\/icons\/loader.svg"},{"selector":".woocommerce .loader","style":".woocommerce .loader::before{--wpr-bg-32706b81-7b26-4071-9ad8-4deab77b8729: url('\/wp-content\/plugins\/woocommerce\/assets\/images\/icons\/loader.svg');}","hash":"32706b81-7b26-4071-9ad8-4deab77b8729","url":"\/wp-content\/plugins\/woocommerce\/assets\/images\/icons\/loader.svg"},{"selector":"#add_payment_method #payment div.payment_box .wc-credit-card-form-card-cvc.visa,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-expiry.visa,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-number.visa,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-cvc.visa,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-expiry.visa,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-number.visa,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-cvc.visa,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-expiry.visa,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-number.visa","style":"#add_payment_method #payment div.payment_box .wc-credit-card-form-card-cvc.visa,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-expiry.visa,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-number.visa,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-cvc.visa,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-expiry.visa,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-number.visa,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-cvc.visa,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-expiry.visa,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-number.visa{--wpr-bg-74fc6a3c-8842-43ba-b632-da8ab36b895c: url('\/wp-content\/plugins\/woocommerce\/assets\/images\/icons\/credit-cards\/visa.svg');}","hash":"74fc6a3c-8842-43ba-b632-da8ab36b895c","url":"\/wp-content\/plugins\/woocommerce\/assets\/images\/icons\/credit-cards\/visa.svg"},{"selector":"#add_payment_method #payment div.payment_box .wc-credit-card-form-card-cvc.mastercard,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-expiry.mastercard,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-number.mastercard,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-cvc.mastercard,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-expiry.mastercard,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-number.mastercard,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-cvc.mastercard,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-expiry.mastercard,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-number.mastercard","style":"#add_payment_method #payment div.payment_box .wc-credit-card-form-card-cvc.mastercard,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-expiry.mastercard,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-number.mastercard,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-cvc.mastercard,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-expiry.mastercard,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-number.mastercard,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-cvc.mastercard,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-expiry.mastercard,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-number.mastercard{--wpr-bg-7ffb022b-0a52-478c-a887-86d882e99f57: url('\/wp-content\/plugins\/woocommerce\/assets\/images\/icons\/credit-cards\/mastercard.svg');}","hash":"7ffb022b-0a52-478c-a887-86d882e99f57","url":"\/wp-content\/plugins\/woocommerce\/assets\/images\/icons\/credit-cards\/mastercard.svg"},{"selector":"#add_payment_method #payment div.payment_box .wc-credit-card-form-card-cvc.laser,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-expiry.laser,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-number.laser,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-cvc.laser,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-expiry.laser,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-number.laser,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-cvc.laser,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-expiry.laser,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-number.laser","style":"#add_payment_method #payment div.payment_box .wc-credit-card-form-card-cvc.laser,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-expiry.laser,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-number.laser,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-cvc.laser,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-expiry.laser,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-number.laser,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-cvc.laser,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-expiry.laser,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-number.laser{--wpr-bg-b221fbd8-8815-4113-b5b7-6b62c618010c: url('\/wp-content\/plugins\/woocommerce\/assets\/images\/icons\/credit-cards\/laser.svg');}","hash":"b221fbd8-8815-4113-b5b7-6b62c618010c","url":"\/wp-content\/plugins\/woocommerce\/assets\/images\/icons\/credit-cards\/laser.svg"},{"selector":"#add_payment_method #payment div.payment_box .wc-credit-card-form-card-cvc.dinersclub,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-expiry.dinersclub,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-number.dinersclub,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-cvc.dinersclub,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-expiry.dinersclub,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-number.dinersclub,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-cvc.dinersclub,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-expiry.dinersclub,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-number.dinersclub","style":"#add_payment_method #payment div.payment_box .wc-credit-card-form-card-cvc.dinersclub,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-expiry.dinersclub,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-number.dinersclub,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-cvc.dinersclub,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-expiry.dinersclub,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-number.dinersclub,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-cvc.dinersclub,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-expiry.dinersclub,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-number.dinersclub{--wpr-bg-2fde5507-0fb2-4208-8b12-5747b544c730: url('\/wp-content\/plugins\/woocommerce\/assets\/images\/icons\/credit-cards\/diners.svg');}","hash":"2fde5507-0fb2-4208-8b12-5747b544c730","url":"\/wp-content\/plugins\/woocommerce\/assets\/images\/icons\/credit-cards\/diners.svg"},{"selector":"#add_payment_method #payment div.payment_box .wc-credit-card-form-card-cvc.maestro,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-expiry.maestro,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-number.maestro,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-cvc.maestro,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-expiry.maestro,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-number.maestro,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-cvc.maestro,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-expiry.maestro,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-number.maestro","style":"#add_payment_method #payment div.payment_box .wc-credit-card-form-card-cvc.maestro,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-expiry.maestro,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-number.maestro,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-cvc.maestro,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-expiry.maestro,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-number.maestro,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-cvc.maestro,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-expiry.maestro,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-number.maestro{--wpr-bg-c5fe048c-fbe0-479f-8d18-1dc3e0e94e5f: url('\/wp-content\/plugins\/woocommerce\/assets\/images\/icons\/credit-cards\/maestro.svg');}","hash":"c5fe048c-fbe0-479f-8d18-1dc3e0e94e5f","url":"\/wp-content\/plugins\/woocommerce\/assets\/images\/icons\/credit-cards\/maestro.svg"},{"selector":"#add_payment_method #payment div.payment_box .wc-credit-card-form-card-cvc.jcb,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-expiry.jcb,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-number.jcb,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-cvc.jcb,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-expiry.jcb,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-number.jcb,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-cvc.jcb,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-expiry.jcb,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-number.jcb","style":"#add_payment_method #payment div.payment_box .wc-credit-card-form-card-cvc.jcb,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-expiry.jcb,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-number.jcb,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-cvc.jcb,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-expiry.jcb,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-number.jcb,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-cvc.jcb,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-expiry.jcb,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-number.jcb{--wpr-bg-0f7c422b-4da7-40f1-9252-25015f130a50: url('\/wp-content\/plugins\/woocommerce\/assets\/images\/icons\/credit-cards\/jcb.svg');}","hash":"0f7c422b-4da7-40f1-9252-25015f130a50","url":"\/wp-content\/plugins\/woocommerce\/assets\/images\/icons\/credit-cards\/jcb.svg"},{"selector":"#add_payment_method #payment div.payment_box .wc-credit-card-form-card-cvc.amex,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-expiry.amex,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-number.amex,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-cvc.amex,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-expiry.amex,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-number.amex,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-cvc.amex,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-expiry.amex,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-number.amex","style":"#add_payment_method #payment div.payment_box .wc-credit-card-form-card-cvc.amex,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-expiry.amex,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-number.amex,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-cvc.amex,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-expiry.amex,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-number.amex,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-cvc.amex,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-expiry.amex,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-number.amex{--wpr-bg-044e793e-82aa-438c-9723-7490018ae345: url('\/wp-content\/plugins\/woocommerce\/assets\/images\/icons\/credit-cards\/amex.svg');}","hash":"044e793e-82aa-438c-9723-7490018ae345","url":"\/wp-content\/plugins\/woocommerce\/assets\/images\/icons\/credit-cards\/amex.svg"},{"selector":"#add_payment_method #payment div.payment_box .wc-credit-card-form-card-cvc.discover,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-expiry.discover,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-number.discover,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-cvc.discover,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-expiry.discover,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-number.discover,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-cvc.discover,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-expiry.discover,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-number.discover","style":"#add_payment_method #payment div.payment_box .wc-credit-card-form-card-cvc.discover,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-expiry.discover,#add_payment_method #payment div.payment_box .wc-credit-card-form-card-number.discover,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-cvc.discover,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-expiry.discover,.woocommerce-cart #payment div.payment_box .wc-credit-card-form-card-number.discover,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-cvc.discover,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-expiry.discover,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form-card-number.discover{--wpr-bg-bf75e711-ead2-4f7e-b512-854b38cbcb4b: url('\/wp-content\/plugins\/woocommerce\/assets\/images\/icons\/credit-cards\/discover.svg');}","hash":"bf75e711-ead2-4f7e-b512-854b38cbcb4b","url":"\/wp-content\/plugins\/woocommerce\/assets\/images\/icons\/credit-cards\/discover.svg"},{"selector":".rll-youtube-player .play","style":".rll-youtube-player .play{--wpr-bg-5ca6d08b-f82f-4159-a32e-2d04c7abf910: url('\/wp-content\/plugins\/wp-rocket\/assets\/img\/youtube.png');}","hash":"5ca6d08b-f82f-4159-a32e-2d04c7abf910","url":"\/wp-content\/plugins\/wp-rocket\/assets\/img\/youtube.png"}]; const rocket_excluded_pairs = [];</script><meta name="generator" content="WP Rocket 3.19.1.2" data-wpr-features="wpr_lazyload_css_bg_img wpr_delay_js wpr_defer_js wpr_minify_js wpr_lazyload_images wpr_lazyload_iframes wpr_minify_css wpr_host_fonts_locally" /><link rel="stylesheet" href="/wp-content/responsive-es.css?v=1" media="all">
+</head>
+<body data-rsssl=1 class="wp-singular post-template-default single single-post postid-6871 single-format-standard wp-embed-responsive wp-theme-hello-elementor theme-hello-elementor woocommerce-no-js hello-elementor-default elementor-default elementor-kit-89 elementor-page-1551">
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KWPDHQQH"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) --><!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WTXC3446"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KWPDHQQH"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+<a class="skip-link screen-reader-text" href="#content">Ir al contenido</a>
+
+		<header data-rocket-location-hash="099233bc4bacc0bcda703e917bc61a55" data-elementor-type="header" data-elementor-id="10373" class="elementor elementor-10373 elementor-location-header" data-elementor-post-type="elementor_library">
+			<header class="elementor-element elementor-element-a05f309 e-flex e-con-boxed e-con e-parent" data-id="a05f309" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;sticky&quot;:&quot;top&quot;,&quot;sticky_effects_offset&quot;:100,&quot;sticky_on&quot;:[&quot;desktop&quot;,&quot;laptop&quot;,&quot;tablet&quot;,&quot;mobile&quot;],&quot;sticky_offset&quot;:0,&quot;sticky_anchor_link_offset&quot;:0}">
+					<div data-rocket-location-hash="da3b654b339ed49f0234db69a353a170" class="e-con-inner">
+		<div class="elementor-element elementor-element-260d41d e-con-full e-flex e-con e-child" data-id="260d41d" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-baefecd e-con-full e-flex e-con e-child" data-id="baefecd" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-69b0989 elementor-widget__width-initial elementor-widget elementor-widget-image" data-id="69b0989" data-element_type="widget" data-e-type="widget" id="topo" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+																<a href="/">
+							<img width="155" height="50" class="attachment-large size-large wp-image-10375" alt="" src="/wp-content/uploads/2026/01/LOGO-JAH-BLOG.svg" /><noscript><img loading="lazy" width="155" height="50" src="/wp-content/uploads/2026/01/LOGO-JAH-BLOG.svg" class="attachment-large size-large wp-image-10375" alt="" /></noscript>								</a>
+															</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-b65f4f6 e-con-full e-flex e-con e-child" data-id="b65f4f6" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-956001a elementor-widget elementor-widget-button" data-id="956001a" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="/blog-2026/">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">VOLVER AL SITIO</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				</div>
+				</div>
+					</div>
+				</header>
+				</header>
+				<div data-rocket-location-hash="94e9b2f4c1ba8cd29fd225eaf229a7e5" data-elementor-type="single-post" data-elementor-id="1551" class="elementor elementor-1551 elementor-location-single post-6871 post type-post status-publish format-standard has-post-thumbnail hentry category-produtos" data-elementor-post-type="elementor_library">
+			<div data-rocket-location-hash="0959650215221275471f9fb58eaa9239" class="elementor-element elementor-element-770b479 e-flex e-con-boxed e-con e-parent" data-id="770b479" data-element_type="container" data-e-type="container">
+					<div data-rocket-location-hash="f250ef8b555c141129e008721383720a" class="e-con-inner">
+		<div class="elementor-element elementor-element-1f333b6 e-con-full e-flex e-con e-child" data-id="1f333b6" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-857f9d5 elementor-mobile-align-left elementor-align-center elementor-widget elementor-widget-post-info" data-id="857f9d5" data-element_type="widget" data-e-type="widget" data-widget_type="post-info.default">
+				<div class="elementor-widget-container">
+							<ul class="elementor-inline-items elementor-icon-list-items elementor-post-info">
+								<li class="elementor-icon-list-item elementor-repeater-item-ba9c996 elementor-inline-item" itemprop="datePublished">
+													<span class="elementor-icon-list-text elementor-post-info__item elementor-post-info__item--type-date">
+										<time>26/09/2023</time>					</span>
+								</li>
+				<li class="elementor-icon-list-item elementor-repeater-item-a0f2d44 elementor-inline-item" itemprop="about">
+													<span class="elementor-icon-list-text elementor-post-info__item elementor-post-info__item--type-terms">
+										<span class="elementor-post-info__terms-list">
+				<a href="/category/produtos/" class="elementor-post-info__terms-list-item">Productos</a>				</span>
+					</span>
+								</li>
+				</ul>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-81d135c elementor-widget__width-initial elementor-widget-tablet__width-inherit elementor-widget elementor-widget-theme-post-title elementor-page-title elementor-widget-heading" data-id="81d135c" data-element_type="widget" data-e-type="widget" data-widget_type="theme-post-title.default">
+				<div class="elementor-widget-container">
+					<h1 class="elementor-heading-title elementor-size-default">Más sabor con más ventajas: ¡Hay CASHBACK en la App de JAH!</h1>				</div>
+				</div>
+				<div class="elementor-element elementor-element-0513506 elementor-widget__width-initial elementor-widget elementor-widget-theme-post-excerpt" data-id="0513506" data-element_type="widget" data-e-type="widget" data-widget_type="theme-post-excerpt.default">
+				<div class="elementor-widget-container">
+					<p>A BUEN PRECIO, EN EL DELIVERY Y CON CASHBACK: Prueba la App de JAH ¿Ya te preguntaste cómo ahorrar en la entrega de tus pedidos favoritos y además recibir dinero de vuelta...				</div>
+				</div>
+				<div class="elementor-element elementor-element-bf97287 elementor-author-box--align-left elementor-author-box--image-valign-middle elementor-widget elementor-widget-author-box" data-id="bf97287" data-element_type="widget" data-e-type="widget" data-widget_type="author-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-author-box">
+							<div  class="elementor-author-box__avatar">
+					<img alt="Foto de Escrito por" src="/wp-content/uploads/2021/10/LOGO-AUTOR-JAH-DO-ACAI.png"><noscript><img src="/wp-content/uploads/2021/10/LOGO-AUTOR-JAH-DO-ACAI.png" alt="Foto de Escrito por" loading="lazy"></noscript>
+				</div>
+			
+			<div class="elementor-author-box__text">
+									<div >
+						<h4 class="elementor-author-box__name">
+							Escrito por						</h4>
+					</div>
+				
+									<div class="elementor-author-box__bio">
+						<p>Equipo JAH</p>
+					</div>
+				
+							</div>
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-16290e8 elementor-widget elementor-widget-theme-post-featured-image elementor-widget-image" data-id="16290e8" data-element_type="widget" data-e-type="widget" data-widget_type="theme-post-featured-image.default">
+				<div class="elementor-widget-container">
+															<img width="5000" height="3334" class="attachment-full size-full wp-image-6872" alt="" srcset="/wp-content/uploads/2023/11/capa-blog-cashback-01.png 5000w, /wp-content/uploads/2023/11/capa-blog-cashback-01-300x200.png 300w, /wp-content/uploads/2023/11/capa-blog-cashback-01-1800x1200.png 1800w, /wp-content/uploads/2023/11/capa-blog-cashback-01-768x512.png 768w, /wp-content/uploads/2023/11/capa-blog-cashback-01-1536x1024.png 1536w, /wp-content/uploads/2023/11/capa-blog-cashback-01-2048x1366.png 2048w" sizes="(max-width: 5000px) 100vw, 5000px" src="/wp-content/uploads/2023/11/capa-blog-cashback-01.png" /><noscript><img loading="lazy" width="5000" height="3334" src="/wp-content/uploads/2023/11/capa-blog-cashback-01.png" class="attachment-full size-full wp-image-6872" alt="" srcset="/wp-content/uploads/2023/11/capa-blog-cashback-01.png 5000w, /wp-content/uploads/2023/11/capa-blog-cashback-01-300x200.png 300w, /wp-content/uploads/2023/11/capa-blog-cashback-01-1800x1200.png 1800w, /wp-content/uploads/2023/11/capa-blog-cashback-01-768x512.png 768w, /wp-content/uploads/2023/11/capa-blog-cashback-01-1536x1024.png 1536w, /wp-content/uploads/2023/11/capa-blog-cashback-01-2048x1366.png 2048w" sizes="(max-width: 5000px) 100vw, 5000px" /></noscript>															</div>
+				</div>
+				<div class="elementor-element elementor-element-6d5c39d elementor-widget__width-initial elementor-widget-tablet__width-inherit elementor-widget elementor-widget-theme-post-content" data-id="6d5c39d" data-element_type="widget" data-e-type="widget" data-widget_type="theme-post-content.default">
+				<div class="elementor-widget-container">
+					
+<p class="has-large-font-size"><strong>A BUEN PRECIO, EN EL DELIVERY Y CON CASHBACK: Prueba la App de JAH</strong></p>
+
+
+
+<p>¿Ya te preguntaste cómo ahorrar en la entrega de tus pedidos favoritos y además recibir dinero de vuelta? Si la respuesta es sí, ¡entonces estás a punto de descubrir la solución perfecta! Con descuentos increíbles en las entregas, delivery propio, cashback en todas las compras y un montón de otras ventajas, la App de JAH es la clave para saborear más, gastando menos. </p>
+
+
+
+<p>Antes de continuar, revisa las ventajas del nuevo servicio de entregas exclusivo de JAH, en:<strong> Delivery de JAH: ¡Sabor y Ahorro en Tu Puerta!</strong></p>
+
+
+
+<h1 class="wp-block-heading has-large-font-size"><strong>¿Quieres un Delivery hasta 10% más económico que los demás? ¡Solo con el Delivery de JAH!</strong></h1>
+
+
+
+<p>¿Pensaste en ahorro? ¡Entonces llegaste al lugar correcto! En el Delivery de JAH, garantizamos que ahorrarás 10% en cada pedido en comparación con las aplicaciones de entrega convencionales, como iFood. ¿Y lo mejor? Todo esto acompañado de una entrega rápida y confiable.<br><br>Además, ofrecemos productos de calidad excepcional y una variedad increíble de sabores, preparados con los mejores ingredientes, y claro, con la calidad que solamente JAH lleva hasta ti.</p>
+
+
+
+<p class="has-large-font-size"><strong>Hasta 20% de cashback en todas las compras</strong></p>
+
+
+
+<p>¿Quieres más ventajas? Con la App de JAH, puedes recibir de vuelta hasta el 20% del valor gastado, directo en tu cuenta. ¡Es facilísimo! Basta con informar tu CPF al momento de la compra, descargar la app ¡y listo! Por cada R$1 en compras, acumulas 1 Join, subiendo de nivel y disfrutando de descuentos aún más increíbles.</p>
+
+
+
+<h2 class="wp-block-heading has-large-font-size"><strong>Joins</strong></h2>
+
+
+
+<p>Los Joins son como la moneda mágica de la App de JAH. A medida que compras, se van acumulando y desbloqueando recompensas sensacionales. Y para que no falten excusas para pedir tus sabores favoritos, sube de nivel y descubre nuevas formas de ahorrar. Con la App de JAH, siempre sales ganando.</p>
+
+
+
+<h1 class="wp-block-heading has-large-font-size"><strong>Productos y Combos Exclusivos en la App</strong></h1>
+
+
+
+<p>Además de los descuentos en el delivery y del generoso cashback, la App de JAH trae una selección exclusiva de productos y combos que solo encuentras aquí. Disfruta de sorteos emocionantes, aprovecha cupones exclusivos con descuentos irresistibles y sé el primero en probar las novedades más sabrosas, que llegan primero a la APP.</p>
+
+
+
+<p class="has-large-font-size"><strong>H2 – Cupón de R$10 en la Primera Compra </strong></p>
+
+
+
+<p>Y para hacer tu primera experiencia con la App de JAH aún más especial, te estamos regalando un cupón de R$10 de descuento en tu primera compra. ¿Y la mejor parte? Este ahorro no es solo para hoy, sino también para los próximos meses. ¡Es el regalo que no deja de dar!</p>
+
+
+
+<p>¿Vamos a pedir un JAH?</p>
+
+
+
+<p>Descarga ahora la App de JAH, aprovecha el descuento en las entregas, acumula cashback y empieza a ahorrar de verdad en tus comidas favoritas. Y no olvides compartir esta oportunidad con tus amigos y familia para que todos puedan disfrutar de estas ventajas increíbles.</p>
+
+
+
+<figure class="wp-block-image"><a href="/app/"><img decoding="async" alt="" src="https://lh7-us.googleusercontent.com/z4KzMf8zZiz408tF2FhSA7rwJxr83HU0kA7Eu0OipXEiZWt6hF79TqV0x3wokmcrlFm4M1d92gc6SG3DSIRtB8oY9P24Eq7H7Hc-I-Nbwum4nEoEyfSP9gHwom2t7MRLV-D00qH6UvntvWNS1I7aFwA" /><noscript><img decoding="async" src="https://lh7-us.googleusercontent.com/z4KzMf8zZiz408tF2FhSA7rwJxr83HU0kA7Eu0OipXEiZWt6hF79TqV0x3wokmcrlFm4M1d92gc6SG3DSIRtB8oY9P24Eq7H7Hc-I-Nbwum4nEoEyfSP9gHwom2t7MRLV-D00qH6UvntvWNS1I7aFwA" alt="" /></noscript></a></figure>
+
+
+
+<p>¡Sigue a JAH en las redes sociales y suscríbete a nuestro newsletter para más novedades deliciosas!</p>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-8ecee26 elementor-widget elementor-widget-heading" data-id="8ecee26" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">artículos que también te pueden gustar</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-ae16385 elementor-grid-4 elementor-posts--align-left elementor-grid-tablet-2 elementor-grid-mobile-1 elementor-posts--thumbnail-top elementor-widget elementor-widget-posts" data-id="ae16385" data-element_type="widget" data-e-type="widget" data-settings="{&quot;classic_columns&quot;:&quot;4&quot;,&quot;classic_row_gap&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:30,&quot;sizes&quot;:[]},&quot;classic_columns_tablet&quot;:&quot;2&quot;,&quot;classic_columns_mobile&quot;:&quot;1&quot;,&quot;classic_row_gap_laptop&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;classic_row_gap_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;classic_row_gap_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}" data-widget_type="posts.classic">
+				<div class="elementor-widget-container">
+							<div class="elementor-posts-container elementor-posts elementor-posts--skin-classic elementor-grid" role="list">
+				<article class="elementor-post elementor-grid-item post-10885 post type-post status-publish format-standard has-post-thumbnail hentry category-franchising category-institucional category-jah-na-midia category-negocios" role="listitem">
+				<a class="elementor-post__thumbnail__link" href="/sair-do-clt-empreender-5-dicas-varejo-franquias/" tabindex="-1" target=&quot;_blank&quot;>
+			<div class="elementor-post__thumbnail"><img width="847" height="846" class="attachment-full size-full wp-image-10895" alt="" src="/wp-content/uploads/2026/02/Captura-de-tela-2026-02-03-164621-1.png" /><noscript><img loading="lazy" width="847" height="846" src="/wp-content/uploads/2026/02/Captura-de-tela-2026-02-03-164621-1.png" class="attachment-full size-full wp-image-10895" alt="" /></noscript></div>
+		</a>
+				<div class="elementor-post__text">
+				<h2 class="elementor-post__title">
+			<a href="/sair-do-clt-empreender-5-dicas-varejo-franquias/" target=&quot;_blank&quot;>
+				Dejar el empleo formal para emprender: 5 lecciones del retail y las franquicias			</a>
+		</h2>
+				<div class="elementor-post__meta-data">
+					<span class="elementor-post-date">
+			03/02/2026		</span>
+				</div>
+				<div class="elementor-post__excerpt">
+			<p>Dejar el Empleo Formal para Emprender: 5 consejos prácticos para hacer la transición con seguridad Dejar</p>
+		</div>
+				</div>
+				</article>
+				<article class="elementor-post elementor-grid-item post-9797 post type-post status-publish format-standard has-post-thumbnail hentry category-sem-categoria-pt" role="listitem">
+				<a class="elementor-post__thumbnail__link" href="/quando-o-obvio-vira-lei-o-acai-e-oficialmente-brasileiro/" tabindex="-1" target=&quot;_blank&quot;>
+			<div class="elementor-post__thumbnail"><img width="2400" height="1260" class="attachment-full size-full wp-image-9798" alt="" src="/wp-content/uploads/2026/01/Capa-Blog-1.png" /><noscript><img loading="lazy" width="2400" height="1260" src="/wp-content/uploads/2026/01/Capa-Blog-1.png" class="attachment-full size-full wp-image-9798" alt="" /></noscript></div>
+		</a>
+				<div class="elementor-post__text">
+				<h2 class="elementor-post__title">
+			<a href="/quando-o-obvio-vira-lei-o-acai-e-oficialmente-brasileiro/" target=&quot;_blank&quot;>
+				Cuando lo obvio se vuelve ley: el açaí es oficialmente brasileño			</a>
+		</h2>
+				<div class="elementor-post__meta-data">
+					<span class="elementor-post-date">
+			21/01/2026		</span>
+				</div>
+				<div class="elementor-post__excerpt">
+			<p>El açaí siempre fue más que un ingrediente para quienes viven y producen en la</p>
+		</div>
+				</div>
+				</article>
+				<article class="elementor-post elementor-grid-item post-9656 post type-post status-publish format-standard has-post-thumbnail hentry category-franchising category-jah-na-midia category-negocios" role="listitem">
+				<a class="elementor-post__thumbnail__link" href="/a-trajetoria-do-sucesso-de-rafael-corte-licoes-do-ceo-do-jah/" tabindex="-1" target=&quot;_blank&quot;>
+			<div class="elementor-post__thumbnail"><img width="1080" height="1117" class="attachment-full size-full wp-image-9659" alt="" src="/wp-content/uploads/2026/01/RAFAEL-CORTE_INSTADOCONVIDADO-1.jpg" /><noscript><img loading="lazy" width="1080" height="1117" src="/wp-content/uploads/2026/01/RAFAEL-CORTE_INSTADOCONVIDADO-1.jpg" class="attachment-full size-full wp-image-9659" alt="" /></noscript></div>
+		</a>
+				<div class="elementor-post__text">
+				<h2 class="elementor-post__title">
+			<a href="/a-trajetoria-do-sucesso-de-rafael-corte-licoes-do-ceo-do-jah/" target=&quot;_blank&quot;>
+				La trayectoria del Éxito de Rafael Corte: Lecciones del CEO de JAH			</a>
+		</h2>
+				<div class="elementor-post__meta-data">
+					<span class="elementor-post-date">
+			15/01/2026		</span>
+				</div>
+				<div class="elementor-post__excerpt">
+			<p>La trayectoria del Éxito de Rafael Corte: Lecciones del CEO de JAH En una conversación</p>
+		</div>
+				</div>
+				</article>
+				<article class="elementor-post elementor-grid-item post-9249 post type-post status-publish format-standard has-post-thumbnail hentry category-jah-na-midia tag-jah tag-sorvete" role="listitem">
+				<a class="elementor-post__thumbnail__link" href="/quanto-tempo-uma-marca-consegue-ocupar-no-dia-das-pessoas/" tabindex="-1" target=&quot;_blank&quot;>
+			<div class="elementor-post__thumbnail"><img width="2400" height="1260" class="attachment-full size-full wp-image-9250" alt="" src="/wp-content/uploads/2026/01/Capa-Blog.png" /><noscript><img loading="lazy" width="2400" height="1260" src="/wp-content/uploads/2026/01/Capa-Blog.png" class="attachment-full size-full wp-image-9250" alt="" /></noscript></div>
+		</a>
+				<div class="elementor-post__text">
+				<h2 class="elementor-post__title">
+			<a href="/quanto-tempo-uma-marca-consegue-ocupar-no-dia-das-pessoas/" target=&quot;_blank&quot;>
+				¿Cuánto tiempo logra ocupar una marca en el día de las personas?			</a>
+		</h2>
+				<div class="elementor-post__meta-data">
+					<span class="elementor-post-date">
+			05/01/2026		</span>
+				</div>
+				<div class="elementor-post__excerpt">
+			<p>Todo el mundo sabe qué es JAH. Una marca que nació a partir del</p>
+		</div>
+				</div>
+				</article>
+				</div>
+		
+						</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-04f9cdb e-flex e-con-boxed e-con e-parent" data-id="04f9cdb" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}">
+					<div data-rocket-location-hash="3f2ebbf863d4612ef775d00659a69d20" class="e-con-inner">
+		<div class="elementor-element elementor-element-a47ba43 e-con-full e-flex e-con e-child" data-id="a47ba43" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-77249f2 elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading" data-id="77249f2" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">NATURAL DE PRINCIPIO A FIN</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-0cbf4f6 elementor-widget-mobile__width-inherit elementor-widget elementor-widget-image" data-id="0cbf4f6" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img width="414" height="259" class="attachment-large size-large wp-image-9942" alt="" srcset="/wp-content/uploads/2026/01/img-01-Secao-3-blog.png 414w, /wp-content/uploads/2026/01/img-01-Secao-3-blog-300x188.png 300w" sizes="(max-width: 414px) 100vw, 414px" src="/wp-content/uploads/2026/01/img-01-Secao-3-blog.png" /><noscript><img loading="lazy" width="414" height="259" src="/wp-content/uploads/2026/01/img-01-Secao-3-blog.png" class="attachment-large size-large wp-image-9942" alt="" srcset="/wp-content/uploads/2026/01/img-01-Secao-3-blog.png 414w, /wp-content/uploads/2026/01/img-01-Secao-3-blog-300x188.png 300w" sizes="(max-width: 414px) 100vw, 414px" /></noscript>															</div>
+				</div>
+				
+				</div>
+		<div class="elementor-element elementor-element-15d85d7 e-con-full elementor-hidden-desktop elementor-hidden-laptop elementor-hidden-tablet elementor-hidden-mobile e-flex e-con e-child" data-id="15d85d7" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-582ff69 elementor-widget elementor-widget-image" data-id="582ff69" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img width="160" height="35" class="attachment-large size-large wp-image-9946" alt="" src="/wp-content/uploads/2026/01/logo-JAHCLUB-lilas-01.svg" /><noscript><img loading="lazy" width="160" height="35" src="/wp-content/uploads/2026/01/logo-JAHCLUB-lilas-01.svg" class="attachment-large size-large wp-image-9946" alt="" /></noscript>															</div>
+				</div>
+				<div class="elementor-element elementor-element-37fdf79 elementor-widget-laptop__width-inherit elementor-widget elementor-widget-heading" data-id="37fdf79" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">SÉ EL PRIMERO EN RECIBIR CUPONES Y VENTAJAS EXCLUSIVAS </h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-f88d7ba elementor-button-align-start elementor-widget elementor-widget-form" data-id="f88d7ba" data-element_type="widget" data-e-type="widget" data-settings="{&quot;step_next_label&quot;:&quot;Pr\u00f3ximo&quot;,&quot;step_previous_label&quot;:&quot;Anterior&quot;,&quot;button_width&quot;:&quot;100&quot;,&quot;step_type&quot;:&quot;number_text&quot;,&quot;step_icon_shape&quot;:&quot;circle&quot;}" data-widget_type="form.default">
+				<div class="elementor-widget-container">
+							<form class="elementor-form" method="post" name="Novo formulário" aria-label="Nuevo formulario">
+			<input type="hidden" name="post_id" value="1551"/>
+			<input type="hidden" name="form_id" value="f88d7ba"/>
+			<input type="hidden" name="referer_title" value="JAH: Sorvetes veganos, sem lactose e zero açúcar pensados para o seu bem-estar - JAH do Açaí" />
+
+							<input type="hidden" name="queried_id" value="8873"/>
+			
+			<div class="elementor-form-fields-wrapper elementor-labels-above">
+								<div class="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-name elementor-col-100">
+												<label for="form-field-name" class="elementor-field-label">
+								Nombre							</label>
+														<input size="1" type="text" name="form_fields[name]" id="form-field-name" class="elementor-field elementor-size-sm  elementor-field-textual" placeholder="¿Cuál es tu nombre?">
+											</div>
+								<div class="elementor-field-type-email elementor-field-group elementor-column elementor-field-group-email elementor-col-100 elementor-field-required">
+												<label for="form-field-email" class="elementor-field-label">
+								E-mail							</label>
+														<input size="1" type="email" name="form_fields[email]" id="form-field-email" class="elementor-field elementor-size-sm  elementor-field-textual" placeholder="¿Cuál es tu mejor e-mail?" required="required">
+											</div>
+								<div class="elementor-field-type-tel elementor-field-group elementor-column elementor-field-group-message elementor-col-100">
+												<label for="form-field-message" class="elementor-field-label">
+								Whatsapp							</label>
+								<input size="1" type="tel" name="form_fields[message]" id="form-field-message" class="elementor-field elementor-size-sm  elementor-field-textual" placeholder="(00) 0000-0000" pattern="[0-9()#&amp;+*-=.]+" title="Solo se aceptan números y caracteres de teléfono (#, -, *, etc.).">
+
+						</div>
+								<div class="elementor-field-group elementor-column elementor-field-type-submit elementor-col-100 e-form__buttons">
+					<button class="elementor-button elementor-size-sm" type="submit">
+						<span class="elementor-button-content-wrapper">
+																						<span class="elementor-button-text">ENTRAR AL JAH CLUB</span>
+													</span>
+					</button>
+				</div>
+			</div>
+		</form>
+						</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-8194645 elementor-widget-mobile__width-inherit elementor-widget__width-initial elementor-widget-laptop__width-initial elementor-hidden-desktop elementor-hidden-laptop elementor-hidden-tablet elementor-hidden-mobile elementor-widget elementor-widget-image" data-id="8194645" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img width="784" height="647" class="attachment-large size-large wp-image-9941" alt="" srcset="/wp-content/uploads/2026/01/img-01-Secao-4-blog.png 784w, /wp-content/uploads/2026/01/img-01-Secao-4-blog-300x248.png 300w, /wp-content/uploads/2026/01/img-01-Secao-4-blog-768x634.png 768w" sizes="(max-width: 784px) 100vw, 784px" src="/wp-content/uploads/2026/01/img-01-Secao-4-blog.png" /><noscript><img loading="lazy" width="784" height="647" src="/wp-content/uploads/2026/01/img-01-Secao-4-blog.png" class="attachment-large size-large wp-image-9941" alt="" srcset="/wp-content/uploads/2026/01/img-01-Secao-4-blog.png 784w, /wp-content/uploads/2026/01/img-01-Secao-4-blog-300x248.png 300w, /wp-content/uploads/2026/01/img-01-Secao-4-blog-768x634.png 768w" sizes="(max-width: 784px) 100vw, 784px" /></noscript>															</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-1410123 e-con-full e-flex e-con e-parent" data-id="1410123" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-c8200d5 elementor-widget-mobile__width-initial baixo elementor-widget elementor-widget-image-carousel" data-id="c8200d5" data-element_type="widget" data-e-type="widget" data-settings="{&quot;slides_to_show&quot;:&quot;4&quot;,&quot;slides_to_scroll&quot;:&quot;1&quot;,&quot;navigation&quot;:&quot;none&quot;,&quot;speed&quot;:6000,&quot;slides_to_show_mobile&quot;:&quot;1&quot;,&quot;autoplay&quot;:&quot;yes&quot;,&quot;infinite&quot;:&quot;yes&quot;,&quot;image_spacing_custom&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:20,&quot;sizes&quot;:[]},&quot;image_spacing_custom_laptop&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;image_spacing_custom_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}" data-widget_type="image-carousel.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-image-carousel-wrapper swiper" role="region" aria-roledescription="carousel" aria-label="Carrusel de imágenes" dir="ltr">
+			<div class="elementor-image-carousel swiper-wrapper" aria-live="off">
+								<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="1 de 4"><figure class="swiper-slide-inner"><img class="swiper-slide-image" alt="MUCHA MÁS FRUTA" src="/wp-content/uploads/2026/01/MUITO-MAIS-FRUTA.png" /><noscript><img class="swiper-slide-image" src="/wp-content/uploads/2026/01/MUITO-MAIS-FRUTA.png" alt="MUCHA MÁS FRUTA" /></noscript></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="2 de 4"><figure class="swiper-slide-inner"><img class="swiper-slide-image" alt="¡LA FELICIDAD TIENE SABOR!" src="/wp-content/uploads/2026/01/FELICIDADE-TEM-SABOR.png" /><noscript><img class="swiper-slide-image" src="/wp-content/uploads/2026/01/FELICIDADE-TEM-SABOR.png" alt="¡LA FELICIDAD TIENE SABOR!" /></noscript></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="3 de 4"><figure class="swiper-slide-inner"><img class="swiper-slide-image" alt="MUCHA MÁS FRUTA" src="/wp-content/uploads/2026/01/MUITO-MAIS-FRUTA-2.png" /><noscript><img class="swiper-slide-image" src="/wp-content/uploads/2026/01/MUITO-MAIS-FRUTA-2.png" alt="MUCHA MÁS FRUTA" /></noscript></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="4 de 4"><figure class="swiper-slide-inner"><img class="swiper-slide-image" alt="¡LA FELICIDAD TIENE SABOR!" src="/wp-content/uploads/2026/01/FELICIDADE-TEM-SABOR-2.png" /><noscript><img class="swiper-slide-image" src="/wp-content/uploads/2026/01/FELICIDADE-TEM-SABOR-2.png" alt="¡LA FELICIDAD TIENE SABOR!" /></noscript></figure></div>			</div>
+							
+									</div>
+						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-57c6f23 e-flex e-con-boxed e-con e-parent" data-id="57c6f23" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div data-rocket-location-hash="29743844a7df5f50a85b29dbbb22a255" class="e-con-inner">
+				<div class="elementor-element elementor-element-e9e0211 elementor-widget elementor-widget-template" data-id="e9e0211" data-element_type="widget" data-e-type="widget" data-widget_type="template.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-template">
+					<div data-elementor-type="section" data-elementor-id="10851" class="elementor elementor-10851 elementor-location-single" data-elementor-post-type="elementor_library">
+			<div class="elementor-element elementor-element-268558a e-flex e-con-boxed e-con e-parent" data-id="268558a" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-53aff9a e-con-full e-flex e-con e-child" data-id="53aff9a" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-6fdad84 elementor-widget__width-initial elementor-widget elementor-widget-heading" data-id="6fdad84" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">La felicidad que alimenta a toda nuestra comunidad</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-766df17 elementor-widget elementor-widget-button" data-id="766df17" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="https://www.instagram.com/jahdoacai/" target="_blank">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">SEGUIR EN INSTAGRAM</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-2cbcfad e-con-full e-flex e-con e-child" data-id="2cbcfad" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-f4b55fd elementor-widget elementor-widget-image" data-id="f4b55fd" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+																<a href="https://www.instagram.com/reel/DPmPKASjjH3/?utm_source=ig_web_copy_link&#038;igsh=MzRlODBiNWFlZA==">
+							<img width="244" height="438" class="attachment-large size-large wp-image-9839" alt="" srcset="/wp-content/uploads/2026/01/instagram-@casalemcenabr.png 244w, /wp-content/uploads/2026/01/instagram-@casalemcenabr-167x300.png 167w" sizes="(max-width: 244px) 100vw, 244px" src="/wp-content/uploads/2026/01/instagram-@casalemcenabr.png" /><noscript><img loading="lazy" width="244" height="438" src="/wp-content/uploads/2026/01/instagram-@casalemcenabr.png" class="attachment-large size-large wp-image-9839" alt="" srcset="/wp-content/uploads/2026/01/instagram-@casalemcenabr.png 244w, /wp-content/uploads/2026/01/instagram-@casalemcenabr-167x300.png 167w" sizes="(max-width: 244px) 100vw, 244px" /></noscript>								</a>
+															</div>
+				</div>
+				<div class="elementor-element elementor-element-1b3ac5c elementor-widget elementor-widget-image" data-id="1b3ac5c" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+																<a href="https://www.instagram.com/reel/DPhcFz8EeO-/?utm_source=ig_web_copy_link&#038;igsh=MzRlODBiNWFlZA==">
+							<img width="244" height="438" class="attachment-large size-large wp-image-9842" alt="" srcset="/wp-content/uploads/2026/01/instagram-@marypguedes.png 244w, /wp-content/uploads/2026/01/instagram-@marypguedes-167x300.png 167w" sizes="(max-width: 244px) 100vw, 244px" src="/wp-content/uploads/2026/01/instagram-@marypguedes.png" /><noscript><img loading="lazy" width="244" height="438" src="/wp-content/uploads/2026/01/instagram-@marypguedes.png" class="attachment-large size-large wp-image-9842" alt="" srcset="/wp-content/uploads/2026/01/instagram-@marypguedes.png 244w, /wp-content/uploads/2026/01/instagram-@marypguedes-167x300.png 167w" sizes="(max-width: 244px) 100vw, 244px" /></noscript>								</a>
+															</div>
+				</div>
+				<div class="elementor-element elementor-element-db62b83 elementor-widget elementor-widget-image" data-id="db62b83" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+																<a href="https://www.instagram.com/reel/DN6ezt_gMxI/?utm_source=ig_web_copy_link&#038;igsh=MzRlODBiNWFlZA==">
+							<img width="244" height="438" class="attachment-large size-large wp-image-9840" alt="" srcset="/wp-content/uploads/2026/01/instagram-@fernandafirmiino.png 244w, /wp-content/uploads/2026/01/instagram-@fernandafirmiino-167x300.png 167w" sizes="(max-width: 244px) 100vw, 244px" src="/wp-content/uploads/2026/01/instagram-@fernandafirmiino.png" /><noscript><img loading="lazy" width="244" height="438" src="/wp-content/uploads/2026/01/instagram-@fernandafirmiino.png" class="attachment-large size-large wp-image-9840" alt="" srcset="/wp-content/uploads/2026/01/instagram-@fernandafirmiino.png 244w, /wp-content/uploads/2026/01/instagram-@fernandafirmiino-167x300.png 167w" sizes="(max-width: 244px) 100vw, 244px" /></noscript>								</a>
+															</div>
+				</div>
+				<div class="elementor-element elementor-element-a495a34 elementor-widget elementor-widget-image" data-id="a495a34" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+																<a href="https://www.instagram.com/reel/DOGm4gOjjOy/?utm_source=ig_web_copy_link&#038;igsh=MzRlODBiNWFlZA==">
+							<img width="244" height="438" class="attachment-large size-large wp-image-9841" alt="" srcset="/wp-content/uploads/2026/01/instagram-@jumotaa.png 244w, /wp-content/uploads/2026/01/instagram-@jumotaa-167x300.png 167w" sizes="(max-width: 244px) 100vw, 244px" src="/wp-content/uploads/2026/01/instagram-@jumotaa.png" /><noscript><img loading="lazy" width="244" height="438" src="/wp-content/uploads/2026/01/instagram-@jumotaa.png" class="attachment-large size-large wp-image-9841" alt="" srcset="/wp-content/uploads/2026/01/instagram-@jumotaa.png 244w, /wp-content/uploads/2026/01/instagram-@jumotaa-167x300.png 167w" sizes="(max-width: 244px) 100vw, 244px" /></noscript>								</a>
+															</div>
+				</div>
+				<div class="elementor-element elementor-element-b9fd450 elementor-widget elementor-widget-image" data-id="b9fd450" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+																<a href="https://www.instagram.com/reel/DOJI7DXjfqu/?utm_source=ig_web_copy_link&#038;igsh=MzRlODBiNWFlZA==">
+							<img width="244" height="438" class="attachment-large size-large wp-image-9843" alt="" srcset="/wp-content/uploads/2026/01/instagram-leisialmeida.png 244w, /wp-content/uploads/2026/01/instagram-leisialmeida-167x300.png 167w" sizes="(max-width: 244px) 100vw, 244px" src="/wp-content/uploads/2026/01/instagram-leisialmeida.png" /><noscript><img loading="lazy" width="244" height="438" src="/wp-content/uploads/2026/01/instagram-leisialmeida.png" class="attachment-large size-large wp-image-9843" alt="" srcset="/wp-content/uploads/2026/01/instagram-leisialmeida.png 244w, /wp-content/uploads/2026/01/instagram-leisialmeida-167x300.png 167w" sizes="(max-width: 244px) 100vw, 244px" /></noscript>								</a>
+															</div>
+				</div>
+				</div>
+					</div>
+				</div>
+				</div>
+				</div>
+						</div>
+				</div>
+					</div>
+				</div>
+				</div>
+				<footer data-elementor-type="footer" data-elementor-id="9790" class="elementor elementor-9790 elementor-location-footer" data-elementor-post-type="elementor_library">
+			<div class="elementor-element elementor-element-d69040a e-flex e-con-boxed e-con e-parent" data-id="d69040a" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-20df370 e-con-full e-flex e-con e-child" data-id="20df370" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-55cd672 elementor-widget elementor-widget-image" data-id="55cd672" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+																<a href="/">
+							<img title="" alt="JAH do Açai - Logo Blanco" src="/wp-content/uploads/2021/09/logo-jah-branco.png" /><noscript><img src="/wp-content/uploads/2021/09/logo-jah-branco.png" title="" alt="JAH do Açai - Logo Blanco" loading="lazy" /></noscript>								</a>
+															</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-3e27484 e-con-full e-flex e-con e-child" data-id="3e27484" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-22eab3d elementor-widget elementor-widget-heading" data-id="22eab3d" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h4 class="elementor-heading-title elementor-size-default">ACCESO RÁPIDO</h4>				</div>
+				</div>
+				<div class="elementor-element elementor-element-570e732 elementor-mobile-align-start elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="570e732" data-element_type="widget" data-e-type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+							<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<a href="/loja/" target="_blank">
+
+											<span class="elementor-icon-list-text">Nuestros productos</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="/unidades/">
+
+											<span class="elementor-icon-list-text">Locales</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="/blog/">
+
+											<span class="elementor-icon-list-text">Blog de JAH</span>
+											</a>
+									</li>
+						</ul>
+						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-b0fbb39 e-con-full e-flex e-con e-child" data-id="b0fbb39" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-b0c84f6 elementor-widget elementor-widget-heading" data-id="b0c84f6" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h4 class="elementor-heading-title elementor-size-default">TRANSPARENCIA</h4>				</div>
+				</div>
+				<div class="elementor-element elementor-element-5741cc9 elementor-mobile-align-start elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="5741cc9" data-element_type="widget" data-e-type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+							<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<a href="/codigo-de-conduta/">
+
+											<span class="elementor-icon-list-text">Código de Conducta</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="/politica-de-privacidade/">
+
+											<span class="elementor-icon-list-text">Política de Privacidad</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="#">
+
+											<span class="elementor-icon-list-text">Carta de Principios</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="#">
+
+											<span class="elementor-icon-list-text">Reporte de Sustentabilidad</span>
+											</a>
+									</li>
+						</ul>
+						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-4150d6b e-con-full e-flex e-con e-child" data-id="4150d6b" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-db9c56e elementor-widget elementor-widget-heading" data-id="db9c56e" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h4 class="elementor-heading-title elementor-size-default">SÉ UN FRANQUICIADO</h4>				</div>
+				</div>
+				<div class="elementor-element elementor-element-0662acd elementor-mobile-align-start elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="0662acd" data-element_type="widget" data-e-type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+							<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<a href="/franqueado/">
+
+											<span class="elementor-icon-list-text">Merchandising</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="/obrigado-seja-um-franqueado">
+
+											<span class="elementor-icon-list-text">Descargas</span>
+											</a>
+									</li>
+						</ul>
+						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-60169c7 e-con-full e-flex e-con e-child" data-id="60169c7" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-fa8152e elementor-widget elementor-widget-heading" data-id="fa8152e" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h4 class="elementor-heading-title elementor-size-default">CONTACTO</h4>				</div>
+				</div>
+				<div class="elementor-element elementor-element-53181ea elementor-mobile-align-start elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="53181ea" data-element_type="widget" data-e-type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+							<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<a href="/ouvidoria/">
+
+											<span class="elementor-icon-list-text">Defensoría del cliente</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="/contato/">
+
+											<span class="elementor-icon-list-text">Contáctanos</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="/trabalhe-conosco/">
+
+											<span class="elementor-icon-list-text">Trabaja en JAH</span>
+											</a>
+									</li>
+						</ul>
+						</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-8465718 elementor-widget elementor-widget-button" data-id="8465718" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="/seja-um-franqueado">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">QUIERO SER FRANQUICIADO</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				<div class="elementor-element elementor-element-4e9f23e elementor-widget__width-inherit elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="4e9f23e" data-element_type="widget" data-e-type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+						</div>
+				</div>
+		<div class="elementor-element elementor-element-ca386d3 e-con-full e-flex e-con e-child" data-id="ca386d3" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-2d99950 elementor-widget elementor-widget-image" data-id="2d99950" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img width="324" height="36" class="attachment-large size-large wp-image-9800" alt="" srcset="/wp-content/uploads/2026/01/Frame-1171275303.png 324w, /wp-content/uploads/2026/01/Frame-1171275303-300x33.png 300w" sizes="(max-width: 324px) 100vw, 324px" src="/wp-content/uploads/2026/01/Frame-1171275303.png" /><noscript><img loading="lazy" width="324" height="36" src="/wp-content/uploads/2026/01/Frame-1171275303.png" class="attachment-large size-large wp-image-9800" alt="" srcset="/wp-content/uploads/2026/01/Frame-1171275303.png 324w, /wp-content/uploads/2026/01/Frame-1171275303-300x33.png 300w" sizes="(max-width: 324px) 100vw, 324px" /></noscript>															</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-0697421 e-con-full e-flex e-con e-child" data-id="0697421" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-e11ae5e e-grid-align-left e-grid-align-mobile-center e-grid-align-tablet-center elementor-shape-rounded elementor-grid-0 elementor-widget elementor-widget-social-icons" data-id="e11ae5e" data-element_type="widget" data-e-type="widget" data-widget_type="social-icons.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-social-icons-wrapper elementor-grid" role="list">
+							<span class="elementor-grid-item" role="listitem">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon- elementor-repeater-item-13d8697" href="https://www.instagram.com/jahdoacai/" target="_blank">
+						<span class="elementor-screen-only"></span>
+						<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none"><rect x="0.5" y="0.5" width="39" height="39" rx="19.5" stroke="#855FA1"></rect><path d="M20.0156 16.3906C21.9844 16.3906 23.6094 18.0156 23.6094 19.9844C23.6094 21.9844 21.9844 23.5781 20.0156 23.5781C18.0156 23.5781 16.4219 21.9844 16.4219 19.9844C16.4219 18.0156 18.0156 16.3906 20.0156 16.3906ZM20.0156 22.3281C21.2969 22.3281 22.3281 21.2969 22.3281 19.9844C22.3281 18.7031 21.2969 17.6719 20.0156 17.6719C18.7031 17.6719 17.6719 18.7031 17.6719 19.9844C17.6719 21.2969 18.7344 22.3281 20.0156 22.3281ZM24.5781 16.2656C24.5781 16.7344 24.2031 17.1094 23.7344 17.1094C23.2656 17.1094 22.8906 16.7344 22.8906 16.2656C22.8906 15.7969 23.2656 15.4219 23.7344 15.4219C24.2031 15.4219 24.5781 15.7969 24.5781 16.2656ZM26.9531 17.1094C27.0156 18.2656 27.0156 21.7344 26.9531 22.8906C26.8906 24.0156 26.6406 24.9844 25.8281 25.8281C25.0156 26.6406 24.0156 26.8906 22.8906 26.9531C21.7344 27.0156 18.2656 27.0156 17.1094 26.9531C15.9844 26.8906 15.0156 26.6406 14.1719 25.8281C13.3594 24.9844 13.1094 24.0156 13.0469 22.8906C12.9844 21.7344 12.9844 18.2656 13.0469 17.1094C13.1094 15.9844 13.3594 14.9844 14.1719 14.1719C15.0156 13.3594 15.9844 13.1094 17.1094 13.0469C18.2656 12.9844 21.7344 12.9844 22.8906 13.0469C24.0156 13.1094 25.0156 13.3594 25.8281 14.1719C26.6406 14.9844 26.8906 15.9844 26.9531 17.1094ZM25.4531 24.1094C25.8281 23.2031 25.7344 21.0156 25.7344 19.9844C25.7344 18.9844 25.8281 16.7969 25.4531 15.8594C25.2031 15.2656 24.7344 14.7656 24.1406 14.5469C23.2031 14.1719 21.0156 14.2656 20.0156 14.2656C18.9844 14.2656 16.7969 14.1719 15.8906 14.5469C15.2656 14.7969 14.7969 15.2656 14.5469 15.8594C14.1719 16.7969 14.2656 18.9844 14.2656 19.9844C14.2656 21.0156 14.1719 23.2031 14.5469 24.1094C14.7969 24.7344 15.2656 25.2031 15.8906 25.4531C16.7969 25.8281 18.9844 25.7344 20.0156 25.7344C21.0156 25.7344 23.2031 25.8281 24.1406 25.4531C24.7344 25.2031 25.2344 24.7344 25.4531 24.1094Z" fill="white"></path></svg>					</a>
+				</span>
+							<span class="elementor-grid-item" role="listitem">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon- elementor-repeater-item-dc10550" href="https://www.linkedin.com/company/jah-do-a%C3%A7a%C3%AD-penguins/" target="_blank">
+						<span class="elementor-screen-only"></span>
+						<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none"><rect x="0.5" y="0.5" width="39" height="39" rx="19.5" stroke="#855FA1"></rect><path d="M16.125 26H13.2188V16.6562H16.125V26ZM14.6562 15.4062C13.75 15.4062 13 14.625 13 13.6875C13 12.7812 13.75 12.0312 14.6562 12.0312C15.5938 12.0312 16.3438 12.7812 16.3438 13.6875C16.3438 14.625 15.5938 15.4062 14.6562 15.4062ZM26.9688 26H24.0938V21.4688C24.0938 20.375 24.0625 19 22.5625 19C21.0625 19 20.8438 20.1562 20.8438 21.375V26H17.9375V16.6562H20.7188V17.9375H20.75C21.1562 17.2188 22.0938 16.4375 23.5 16.4375C26.4375 16.4375 27 18.375 27 20.875V26H26.9688Z" fill="white"></path></svg>					</a>
+				</span>
+							<span class="elementor-grid-item" role="listitem">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon- elementor-repeater-item-dbaeb71" href="https://www.youtube.com/channel/UCsK4J3pDw0_zNleYWihpN_g" target="_blank">
+						<span class="elementor-screen-only"></span>
+						<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none"><rect x="0.5" y="0.5" width="39" height="39" rx="19.5" stroke="#855FA1"></rect><path d="M28.1562 15.9062C28.5312 17.2188 28.5312 20.0312 28.5312 20.0312C28.5312 20.0312 28.5312 22.8125 28.1562 24.1562C27.9688 24.9062 27.375 25.4688 26.6562 25.6562C25.3125 26 20 26 20 26C20 26 14.6562 26 13.3125 25.6562C12.5938 25.4688 12 24.9062 11.8125 24.1562C11.4375 22.8125 11.4375 20.0312 11.4375 20.0312C11.4375 20.0312 11.4375 17.2188 11.8125 15.9062C12 15.1562 12.5938 14.5625 13.3125 14.375C14.6562 14 20 14 20 14C20 14 25.3125 14 26.6562 14.375C27.375 14.5625 27.9688 15.1562 28.1562 15.9062ZM18.25 22.5625L22.6875 20.0312L18.25 17.5V22.5625Z" fill="white"></path></svg>					</a>
+				</span>
+							<span class="elementor-grid-item" role="listitem">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon- elementor-repeater-item-0267196" href="#" target="_blank">
+						<span class="elementor-screen-only"></span>
+						<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none"><rect x="0.5" y="0.5" width="39" height="39" rx="19.5" stroke="#855FA1"></rect><path d="M19.75 12.25C24 12.25 27.5 15.75 27.5 20C27.5 24.2812 24 27.75 19.75 27.75C15.4688 27.75 12 24.2812 12 20C12 15.75 15.4688 12.25 19.75 12.25ZM22.875 23.6562C23.125 23.6562 23.3438 23.4688 23.3438 23.1875C23.3438 22.9062 23.25 22.7812 23.0625 22.6562C20.8125 21.3438 18.2188 21.2812 15.6562 21.8438C15.4062 21.9062 15.2188 22.0625 15.2188 22.375C15.2188 22.625 15.4062 22.875 15.7188 22.875C15.8125 22.875 15.9688 22.8125 16.0938 22.7812C18.3438 22.3438 20.5938 22.375 22.5625 23.5625C22.6562 23.625 22.75 23.6562 22.875 23.6562ZM23.7188 21.625C24.0625 21.625 24.3125 21.3438 24.3438 21C24.3438 20.75 24.2188 20.5312 23.9688 20.4062C22.4375 19.4688 20.4688 18.9688 18.4375 18.9688C17.1562 18.9688 16.25 19.1562 15.375 19.4062C15.0625 19.5 14.9062 19.7188 14.9062 20.0312C14.9062 20.375 15.1875 20.6562 15.5 20.6562C15.6562 20.6562 15.7188 20.5938 15.875 20.5625C18.4688 19.875 21.375 20.3438 23.3438 21.5C23.4375 21.5312 23.5625 21.625 23.7188 21.625ZM24.6875 19.25C25.0625 19.25 25.4062 18.9375 25.4062 18.5C25.4062 18.125 25.25 17.9375 25 17.8125C23.2812 16.7812 20.875 16.3125 18.5938 16.3125C17.25 16.3125 16.0312 16.4688 14.9375 16.7812C14.6562 16.875 14.375 17.0938 14.375 17.5312C14.375 17.9375 14.6875 18.2812 15.0938 18.2812C15.25 18.2812 15.4062 18.2188 15.5 18.1875C18.0938 17.4688 22.0625 17.7812 24.2812 19.125C24.4375 19.1875 24.5312 19.25 24.6875 19.25Z" fill="white"></path></svg>					</a>
+				</span>
+					</div>
+						</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-12de804 elementor-widget__width-inherit elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="12de804" data-element_type="widget" data-e-type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-4a073c9 elementor-widget elementor-widget-heading" data-id="4a073c9" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h4 class="elementor-heading-title elementor-size-default">© JAH 2025</h4>				</div>
+				</div>
+				<div class="elementor-element elementor-element-ce18fac elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="ce18fac" data-element_type="widget" data-e-type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+							<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<a href="#topo">
+
+												<span class="elementor-icon-list-icon">
+							<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="20" fill="#855FA1"></rect><path d="M19.4688 16.4688C19.75 16.1875 20.2188 16.1875 20.5 16.4688L25.5312 21.4688C25.8125 21.7812 25.8125 22.25 25.5312 22.5312C25.2188 22.8438 24.75 22.8438 24.4688 22.5312L20 18.0625L15.5312 22.5312C15.2188 22.8438 14.75 22.8438 14.4688 22.5312C14.1562 22.25 14.1562 21.7812 14.4688 21.5L19.4688 16.4688Z" fill="white"></path></svg>						</span>
+										<span class="elementor-icon-list-text">VOLVER ARRIBA</span>
+											</a>
+									</li>
+						</ul>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-473ba84 elementor-widget elementor-widget-heading" data-id="473ba84" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h4 class="elementor-heading-title elementor-size-default">HECHO CON ❤️ PARA QUIENES AMAN SER FELICES</h4>				</div>
+				</div>
+					</div>
+				</div>
+				</footer>
+		
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/hello-elementor/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<!--
+The IP2Location Country Blocker is using IP2Location LITE geolocation database. Please visit https://lite.ip2location.com for more information.
+-->
+<div id='pys_ajax_events'></div>        <script>
+            var node = document.getElementsByClassName('woocommerce-message')[0];
+            if(node && document.getElementById('pys_late_event')) {
+                var messageText = node.textContent.trim();
+                if(!messageText) {
+                    node.style.display = 'none';
+                }
+            }
+        </script>
+        			<script type="rocketlazyloadscript">
+				const lazyloadRunObserver = () => {
+					const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` );
+					const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {
+						entries.forEach( ( entry ) => {
+							if ( entry.isIntersecting ) {
+								let lazyloadBackground = entry.target;
+								if( lazyloadBackground ) {
+									lazyloadBackground.classList.add( 'e-lazyloaded' );
+								}
+								lazyloadBackgroundObserver.unobserve( entry.target );
+							}
+						});
+					}, { rootMargin: '200px 0px 200px 0px' } );
+					lazyloadBackgrounds.forEach( ( lazyloadBackground ) => {
+						lazyloadBackgroundObserver.observe( lazyloadBackground );
+					} );
+				};
+				const events = [
+					'DOMContentLoaded',
+					'elementor/lazyload/observe',
+				];
+				events.forEach( ( event ) => {
+					document.addEventListener( event, lazyloadRunObserver );
+				} );
+			</script>
+			<script type="rocketlazyloadscript">(function () {
+
+  function isTargetProduct() {
+    return document.body.classList.contains('postid-10453') ||
+           window.location.href.includes('chocolate-belga-duplo-zero');
+  }
+
+  function inserirLinhas() {
+    if (!isTargetProduct()) return;
+
+    // Evita duplicar
+    if (document.querySelector('.linha-extra-lactose')) return;
+
+    // Pega todos os títulos da tabela (coluna esquerda)
+    const titulos = document.querySelectorAll('.elementor-widget-heading');
+
+    titulos.forEach((el) => {
+      const texto = el.innerText.toLowerCase().trim();
+
+      if (texto.includes('açúcares adicionados')) {
+
+        // Container pai da linha
+        const linhaBase = el.closest('.elementor-container');
+
+        if (!linhaBase) return;
+
+        // Clona a estrutura da linha
+        const lactose = linhaBase.cloneNode(true);
+        const galactose = linhaBase.cloneNode(true);
+
+        // --- LACTOSE ---
+        lactose.classList.add('linha-extra-lactose');
+        lactose.querySelectorAll('.elementor-widget-heading')[0].innerText = 'Lactose (g)';
+        lactose.querySelectorAll('.elementor-widget-heading')[2].innerText = '0';
+        lactose.querySelectorAll('.elementor-widget-heading')[1].innerText = '-';
+        lactose.querySelectorAll('.elementor-widget-heading')[3].innerText = '-';
+
+        // --- GALACTOSE ---
+        galactose.classList.add('linha-extra-galactose');
+        galactose.querySelectorAll('.elementor-widget-heading')[0].innerText = 'Galactose (g)';
+        galactose.querySelectorAll('.elementor-widget-heading')[2].innerText = '1';
+        galactose.querySelectorAll('.elementor-widget-heading')[1].innerText = '-';
+        galactose.querySelectorAll('.elementor-widget-heading')[3].innerText = '-';
+
+        // Insere após a linha base
+        linhaBase.insertAdjacentElement('afterend', lactose);
+        lactose.insertAdjacentElement('afterend', galactose);
+      }
+    });
+  }
+
+  // Executa várias vezes (por causa do Elementor/WP Rocket)
+  let tentativas = 0;
+  const intervalo = setInterval(() => {
+    inserirLinhas();
+    tentativas++;
+    if (document.querySelector('.linha-extra-lactose') || tentativas > 20) {
+      clearInterval(intervalo);
+    }
+  }, 500);
+
+})();</script><noscript><img loading="lazy" height="1" width="1" style="display: none;" src="https://www.facebook.com/tr?id=4578489185721707&ev=PageView&noscript=1&cd%5Bpost_category%5D=Produtos&cd%5Bpage_title%5D=Mais+sabor+com+mais+vantagens%3A+Tem+CASHBACK+no+App+do+JAH%21&cd%5Bpost_type%5D=post&cd%5Bpost_id%5D=6871&cd%5Bplugin%5D=PixelYourSite&cd%5Buser_role%5D=guest&cd%5Bevent_url%5D=jahdoacai.com.br%2Fmais-sabor-com-mais-vantagens-tem-cashback-no-app-do-jah-2%2F" alt=""></noscript>
+	<script type="rocketlazyloadscript">
+		(function () {
+			var c = document.body.className;
+			c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+			document.body.className = c;
+		})();
+	</script>
+	<link data-minify="1" rel='stylesheet' id='wc-blocks-style-css' href='/wp-content/cache/min/1/wp-content/plugins/woocommerce/assets/client/blocks/wc-blocks.css?ver=1784316386' media='all' />
+<link rel='stylesheet' id='elementor-post-10851-css' href='/wp-content/uploads/elementor/css/post-10851.css?ver=1784316386' media='all' />
+<link data-minify="1" rel='stylesheet' id='fme-frontend-css-css' href='/wp-content/cache/min/1/wp-content/plugins/form-masks-for-elementor/assets/css/mask-frontend.css?ver=1784316386' media='all' />
+<script type="rocketlazyloadscript" id="pll_cookie_script-js-after">
+(function() {
+				var expirationDate = new Date();
+				expirationDate.setTime( expirationDate.getTime() + 31536000 * 1000 );
+				document.cookie = "pll_language=pt; expires=" + expirationDate.toUTCString() + "; path=/; secure; SameSite=Lax";
+			}());
+
+//# sourceURL=pll_cookie_script-js-after
+</script>
+<script id="rocket_lazyload_css-js-extra">
+var rocket_lazyload_css_data = {"threshold":"300"};
+//# sourceURL=rocket_lazyload_css-js-extra
+</script>
+<script id="rocket_lazyload_css-js-after">
+!function o(n,c,a){function u(t,e){if(!c[t]){if(!n[t]){var r="function"==typeof require&&require;if(!e&&r)return r(t,!0);if(s)return s(t,!0);throw(e=new Error("Cannot find module '"+t+"'")).code="MODULE_NOT_FOUND",e}r=c[t]={exports:{}},n[t][0].call(r.exports,function(e){return u(n[t][1][e]||e)},r,r.exports,o,n,c,a)}return c[t].exports}for(var s="function"==typeof require&&require,e=0;e<a.length;e++)u(a[e]);return u}({1:[function(e,t,r){"use strict";{const c="undefined"==typeof rocket_pairs?[]:rocket_pairs,a=(("undefined"==typeof rocket_excluded_pairs?[]:rocket_excluded_pairs).map(t=>{var e=t.selector;document.querySelectorAll(e).forEach(e=>{e.setAttribute("data-rocket-lazy-bg-"+t.hash,"excluded")})}),document.querySelector("#wpr-lazyload-bg-container"));var o=rocket_lazyload_css_data.threshold||300;const u=new IntersectionObserver(e=>{e.forEach(t=>{t.isIntersecting&&c.filter(e=>t.target.matches(e.selector)).map(t=>{var e;t&&((e=document.createElement("style")).textContent=t.style,a.insertAdjacentElement("afterend",e),t.elements.forEach(e=>{u.unobserve(e),e.setAttribute("data-rocket-lazy-bg-"+t.hash,"loaded")}))})})},{rootMargin:o+"px"});function n(){0<(0<arguments.length&&void 0!==arguments[0]?arguments[0]:[]).length&&c.forEach(t=>{try{document.querySelectorAll(t.selector).forEach(e=>{"loaded"!==e.getAttribute("data-rocket-lazy-bg-"+t.hash)&&"excluded"!==e.getAttribute("data-rocket-lazy-bg-"+t.hash)&&(u.observe(e),(t.elements||=[]).push(e))})}catch(e){console.error(e)}})}n(),function(){const r=window.MutationObserver;return function(e,t){if(e&&1===e.nodeType)return(t=new r(t)).observe(e,{attributes:!0,childList:!0,subtree:!0}),t}}()(document.querySelector("body"),n)}},{}]},{},[1]);
+//# sourceURL=rocket_lazyload_css-js-after
+</script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-src="/wp-content/cache/min/1/wp-content/themes/hello-elementor/assets/js/hello-frontend.js?ver=1782403686" id="hello-theme-frontend-js" data-rocket-defer defer></script>
+<script type="rocketlazyloadscript" data-rocket-src="/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.35.8" id="elementor-webpack-runtime-js" data-rocket-defer defer></script>
+<script type="rocketlazyloadscript" data-rocket-src="/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.35.8" id="elementor-frontend-modules-js" data-rocket-defer defer></script>
+<script type="rocketlazyloadscript" data-rocket-src="/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3" id="jquery-ui-core-js" data-rocket-defer defer></script>
+<script type="rocketlazyloadscript" id="elementor-frontend-js-before">
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Compartilhar no Facebook","shareOnTwitter":"Compartilhar no Twitter","pinIt":"Fixar","download":"Baixar","downloadImage":"Baixar imagem","fullscreen":"Tela cheia","zoom":"Zoom","share":"Compartilhar","playVideo":"Reproduzir v\u00eddeo","previous":"Anterior","next":"Pr\u00f3ximo","close":"Fechar","a11yCarouselPrevSlideMessage":"Slide anterior","a11yCarouselNextSlideMessage":"Pr\u00f3ximo slide","a11yCarouselFirstSlideMessage":"Este \u00e9 o primeiro slide","a11yCarouselLastSlideMessage":"Este \u00e9 o \u00faltimo slide","a11yCarouselPaginationBulletMessage":"Ir para o slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Dispositivos m\u00f3veis no modo retrato","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Dispositivos m\u00f3veis no modo paisagem","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet no modo retrato","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet no modo paisagem","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Notebook","value":1366,"default_value":1366,"direction":"max","is_enabled":true},"widescreen":{"label":"Tela ampla (widescreen)","value":2400,"default_value":2400,"direction":"min","is_enabled":false}},"hasCustomBreakpoints":true},"version":"3.35.8","is_static":false,"experimentalFeatures":{"e_font_icon_svg":true,"additional_custom_breakpoints":true,"container":true,"theme_builder_v2":true,"hello-theme-header-footer":true,"nested-elements":true,"home_screen":true,"global_classes_should_enforce_capabilities":true,"e_variables":true,"cloud-library":true,"e_opt_in_v4_page":true,"e_components":true,"e_interactions":true,"e_editor_one":true,"import-export-customization":true,"e_pro_atomic_form":true,"mega-menu":true,"e_pro_variables":true,"e_pro_interactions":true},"urls":{"assets":"\/wp-content\/plugins\/elementor\/assets\/","ajaxurl":"\/wp-admin\/admin-ajax.php","uploadUrl":"\/wp-content\/uploads"},"nonces":{"floatingButtonsClickTracking":"d60cb324f2"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"stretched_section_container":"#Wrapper","active_breakpoints":["viewport_mobile","viewport_tablet","viewport_laptop"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description","woocommerce_notices_elements":[],"hello_header_logo_type":"title","hello_header_menu_layout":"horizontal","hello_footer_logo_type":"logo"},"post":{"id":6871,"title":"Mais%20sabor%20com%20mais%20vantagens%3A%20Tem%20CASHBACK%20no%20App%20do%20JAH%21%20-%20JAH%20do%20A%C3%A7a%C3%AD","excerpt":"","featuredImage":"\/wp-content\/uploads\/2023\/11\/capa-blog-cashback-01-1800x1200.png"}};
+//# sourceURL=elementor-frontend-js-before
+</script>
+<script type="rocketlazyloadscript" data-rocket-src="/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.35.8" id="elementor-frontend-js" data-rocket-defer defer></script>
+<script src="/wp-content/plugins/pro-elements/assets/lib/sticky/jquery.sticky.min.js?ver=4.1.0" id="e-sticky-js"></script>
+<script type="rocketlazyloadscript" data-rocket-src="/wp-includes/js/imagesloaded.min.js?ver=5.0.0" id="imagesloaded-js" data-rocket-defer defer></script>
+<script type="rocketlazyloadscript" data-rocket-src="/wp-content/plugins/elementor/assets/lib/swiper/v8/swiper.min.js?ver=8.4.5" id="swiper-js" data-rocket-defer defer></script>
+<script id="happy-elementor-addons-js-extra">
+var HappyLocalize = {"ajax_url":"/wp-admin/admin-ajax.php","nonce":"bbd362cad0","pdf_js_lib":"/wp-content/plugins/happy-elementor-addons/assets/vendor/pdfjs/lib"};
+//# sourceURL=happy-elementor-addons-js-extra
+</script>
+<script type="rocketlazyloadscript" data-rocket-src="/wp-content/plugins/happy-elementor-addons/assets/js/happy-addons.min.js?ver=3.21.1" id="happy-elementor-addons-js" data-rocket-defer defer></script>
+<script type="rocketlazyloadscript" data-rocket-src="/wp-content/plugins/woocommerce/assets/js/sourcebuster/sourcebuster.min.js?ver=10.3.7" id="sourcebuster-js-js" data-rocket-defer defer></script>
+<script id="wc-order-attribution-js-extra">
+var wc_order_attribution = {"params":{"lifetime":1.0000000000000000818030539140313095458623138256371021270751953125e-5,"session":30,"base64":false,"ajaxurl":"/wp-admin/admin-ajax.php","prefix":"wc_order_attribution_","allowTracking":true},"fields":{"source_type":"current.typ","referrer":"current_add.rf","utm_campaign":"current.cmp","utm_source":"current.src","utm_medium":"current.mdm","utm_content":"current.cnt","utm_id":"current.id","utm_term":"current.trm","utm_source_platform":"current.plt","utm_creative_format":"current.fmt","utm_marketing_tactic":"current.tct","session_entry":"current_add.ep","session_start_time":"current_add.fd","session_pages":"session.pgs","session_count":"udata.vst","user_agent":"udata.uag"}};
+//# sourceURL=wc-order-attribution-js-extra
+</script>
+<script type="rocketlazyloadscript" data-rocket-src="/wp-content/plugins/woocommerce/assets/js/frontend/order-attribution.min.js?ver=10.3.7" id="wc-order-attribution-js" data-rocket-defer defer></script>
+<script defer src="/wp-content/plugins/pixelyoursite/dist/scripts/jquery.bind-first-0.2.3.min.js?ver=0.2.3" id="jquery-bind-first-js"></script>
+<script defer src="/wp-content/plugins/pixelyoursite/dist/scripts/js.cookie-2.1.3.min.js?ver=2.1.3" id="js-cookie-pys-js"></script>
+<script defer src="/wp-content/plugins/pixelyoursite/dist/scripts/tld.min.js?ver=2.3.1" id="js-tld-js"></script>
+<script id="pys-js-extra">
+var pysOptions = {"staticEvents":{"facebook":{"init_event":[{"delay":0,"type":"static","ajaxFire":false,"name":"PageView","pixelIds":["4578489185721707"],"eventID":"09ae9fb4-2b58-49d5-90aa-0cdf547f708d","params":{"post_category":"Produtos","page_title":"Mais sabor com mais vantagens: Tem CASHBACK no App do JAH!","post_type":"post","post_id":6871,"plugin":"PixelYourSite","user_role":"guest","event_url":"jahdoacai.com.br/mais-sabor-com-mais-vantagens-tem-cashback-no-app-do-jah-2/"},"e_id":"init_event","ids":[],"hasTimeWindow":false,"timeWindow":0,"woo_order":"","edd_order":""}]}},"dynamicEvents":[],"triggerEvents":[],"triggerEventTypes":[],"facebook":{"pixelIds":["4578489185721707"],"advancedMatching":[],"advancedMatchingEnabled":false,"removeMetadata":true,"wooVariableAsSimple":false,"serverApiEnabled":true,"send_external_id":null,"enabled_medical":false,"do_not_track_medical_param":["event_url","post_title","page_title","landing_page","content_name","categories","category_name","tags"],"meta_ldu":false},"debug":"","siteUrl":"/","ajaxUrl":"/wp-admin/admin-ajax.php","ajax_event":"2f48c9192c","enable_remove_download_url_param":"1","cookie_duration":"7","last_visit_duration":"60","enable_success_send_form":"","ajaxForServerEvent":"1","ajaxForServerStaticEvent":"1","useSendBeacon":"1","send_external_id":"1","external_id_expire":"180","track_cookie_for_subdomains":"1","google_consent_mode":"1","gdpr":{"ajax_enabled":false,"all_disabled_by_api":false,"facebook_disabled_by_api":false,"analytics_disabled_by_api":false,"google_ads_disabled_by_api":false,"pinterest_disabled_by_api":false,"bing_disabled_by_api":false,"reddit_disabled_by_api":false,"externalID_disabled_by_api":false,"facebook_prior_consent_enabled":true,"analytics_prior_consent_enabled":true,"google_ads_prior_consent_enabled":null,"pinterest_prior_consent_enabled":true,"bing_prior_consent_enabled":true,"cookiebot_integration_enabled":false,"cookiebot_facebook_consent_category":"marketing","cookiebot_analytics_consent_category":"statistics","cookiebot_tiktok_consent_category":"marketing","cookiebot_google_ads_consent_category":"marketing","cookiebot_pinterest_consent_category":"marketing","cookiebot_bing_consent_category":"marketing","consent_magic_integration_enabled":false,"real_cookie_banner_integration_enabled":false,"cookie_notice_integration_enabled":false,"cookie_law_info_integration_enabled":false,"analytics_storage":{"enabled":true,"value":"granted","filter":false},"ad_storage":{"enabled":true,"value":"granted","filter":false},"ad_user_data":{"enabled":true,"value":"granted","filter":false},"ad_personalization":{"enabled":true,"value":"granted","filter":false}},"cookie":{"disabled_all_cookie":false,"disabled_start_session_cookie":false,"disabled_advanced_form_data_cookie":false,"disabled_landing_page_cookie":false,"disabled_first_visit_cookie":false,"disabled_trafficsource_cookie":false,"disabled_utmTerms_cookie":false,"disabled_utmId_cookie":false},"tracking_analytics":{"TrafficLanding":"/mais-sabor-com-mais-vantagens-tem-cashback-no-app-do-jah-2/","TrafficUtms":[],"TrafficUtmsId":[]},"GATags":{"ga_datalayer_type":"default","ga_datalayer_name":"dataLayerPYS"},"woo":{"enabled":true,"enabled_save_data_to_orders":true,"addToCartOnButtonEnabled":true,"addToCartOnButtonValueEnabled":true,"addToCartOnButtonValueOption":"price","singleProductId":null,"removeFromCartSelector":"form.woocommerce-cart-form .remove","addToCartCatchMethod":"add_cart_hook","is_order_received_page":false,"containOrderId":false},"edd":{"enabled":false},"cache_bypass":"1784388890"};
+//# sourceURL=pys-js-extra
+</script>
+<script data-minify="1" defer src="/wp-content/cache/min/1/wp-content/plugins/pixelyoursite/dist/scripts/public.js?ver=1782403686" id="pys-js"></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-src="/wp-content/cache/min/1/js/loader-scripts/f939ed78-3474-4536-b171-a8d10084bea0-loader.js?ver=1782403686" id="tracking-code-script-62392d3a859a103a1ebc25ef493de646-js" data-rocket-defer defer></script>
+<script type="rocketlazyloadscript" data-rocket-src="/wp-content/plugins/pro-elements/assets/js/webpack-pro.runtime.min.js?ver=4.1.0" id="elementor-pro-webpack-runtime-js" data-rocket-defer defer></script>
+<script type="rocketlazyloadscript" data-rocket-src="/wp-includes/js/dist/hooks.min.js?ver=dd5603f07f9220ed27f1" id="wp-hooks-js"></script>
+<script type="rocketlazyloadscript" data-rocket-src="/wp-includes/js/dist/i18n.min.js?ver=c26c3dc7bed366793375" id="wp-i18n-js"></script>
+<script type="rocketlazyloadscript" id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+//# sourceURL=wp-i18n-js-after
+</script>
+<script type="rocketlazyloadscript" id="elementor-pro-frontend-js-before">
+var ElementorProFrontendConfig = {"ajaxurl":"\/wp-admin\/admin-ajax.php","nonce":"a403563298","urls":{"assets":"\/wp-content\/plugins\/pro-elements\/assets\/","rest":"\/wp-json\/"},"settings":{"lazy_load_background_images":true},"popup":{"hasPopUps":true},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"},"x-twitter":{"title":"X"},"threads":{"title":"Threads"}},"woocommerce":{"menu_cart":{"cart_page_url":"\/carrinho\/","checkout_page_url":"\/?page_id=10010","fragments_nonce":"3aa5ba9d8f"}},"facebook_sdk":{"lang":"pt_BR","app_id":""},"lottie":{"defaultAnimationUrl":"\/wp-content\/plugins\/pro-elements\/modules\/lottie\/assets\/animations\/default.json"}};
+//# sourceURL=elementor-pro-frontend-js-before
+</script>
+<script type="rocketlazyloadscript" data-rocket-src="/wp-content/plugins/pro-elements/assets/js/frontend.min.js?ver=4.1.0" id="elementor-pro-frontend-js" data-rocket-defer defer></script>
+<script type="rocketlazyloadscript" data-rocket-src="/wp-content/plugins/pro-elements/assets/js/elements-handlers.min.js?ver=4.1.0" id="pro-elements-handlers-js" data-rocket-defer defer></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-src="/wp-content/cache/min/1/wp-content/plugins/jet-woo-builder/assets/lib/jet-plugins/jet-plugins.js?ver=1782403686" id="jet-plugins-js" data-rocket-defer defer></script>
+<script id="jet-woo-builder-js-extra">
+var jetWooBuilderData = {"ajax_url":"/wp-admin/admin-ajax.php","products":"{\"page\":0,\"name\":\"mais-sabor-com-mais-vantagens-tem-cashback-no-app-do-jah-2\",\"error\":\"\",\"m\":\"\",\"p\":0,\"post_parent\":\"\",\"subpost\":\"\",\"subpost_id\":\"\",\"attachment\":\"\",\"attachment_id\":0,\"pagename\":\"\",\"page_id\":0,\"second\":\"\",\"minute\":\"\",\"hour\":\"\",\"day\":0,\"monthnum\":0,\"year\":0,\"w\":0,\"category_name\":\"\",\"tag\":\"\",\"cat\":\"\",\"tag_id\":\"\",\"author\":\"\",\"author_name\":\"\",\"feed\":\"\",\"tb\":\"\",\"paged\":0,\"meta_key\":\"\",\"meta_value\":\"\",\"preview\":\"\",\"s\":\"\",\"sentence\":\"\",\"title\":\"\",\"fields\":\"all\",\"menu_order\":\"\",\"embed\":\"\",\"category__in\":[],\"category__not_in\":[],\"category__and\":[],\"post__in\":[],\"post__not_in\":[],\"post_name__in\":[],\"tag__in\":[],\"tag__not_in\":[],\"tag__and\":[],\"tag_slug__in\":[],\"tag_slug__and\":[],\"post_parent__in\":[],\"post_parent__not_in\":[],\"author__in\":[],\"author__not_in\":[],\"search_columns\":[],\"tax_query\":[{\"taxonomy\":\"language\",\"field\":\"term_taxonomy_id\",\"terms\":[251],\"operator\":\"IN\"}],\"ignore_sticky_posts\":false,\"suppress_filters\":false,\"cache_results\":true,\"update_post_term_cache\":true,\"update_menu_item_cache\":false,\"lazy_load_term_meta\":true,\"update_post_meta_cache\":true,\"post_type\":\"\",\"posts_per_page\":10,\"nopaging\":false,\"comments_per_page\":\"50\",\"no_found_rows\":false,\"order\":\"DESC\"}","single_ajax_add_to_cart":""};
+//# sourceURL=jet-woo-builder-js-extra
+</script>
+<script type="rocketlazyloadscript" data-rocket-src="/wp-content/plugins/jet-woo-builder/assets/js/frontend.min.js?ver=2.2.2" id="jet-woo-builder-js" data-rocket-defer defer></script>
+<script id="fme-custom-mask-script-js-extra">
+var fmeData = {"pluginUrl":"/wp-content/plugins/form-masks-for-elementor/","errorMessages":{"mask-cnpj":"CNPJ inv\u00e1lido.","mask-cpf":"CPF inv\u00e1lido.","mask-cep":"CEP inv\u00e1lido (XXXXX-XXX).","mask-phus":"N\u00famero inv\u00e1lido: (123) 456-7890","mask-ph8":"N\u00famero inv\u00e1lido: 1234-5678","mask-ddd8":"N\u00famero inv\u00e1lido: (DDD) 1234-5678","mask-ddd9":"N\u00famero inv\u00e1lido: (DDD) 91234-5678","mask-dmy":"Data inv\u00e1lida: dd/mm/aaaa","mask-mdy":"Data inv\u00e1lida: mm/dd/aaaa","mask-hms":"Hora inv\u00e1lida: hh:mm:ss","mask-hm":"Hora inv\u00e1lida: hh:mm","mask-dmyhm":"Data inv\u00e1lida: dd/mm/aaaa hh:mm","mask-mdyhm":"Data inv\u00e1lida: mm/dd/aaaa hh:mm","mask-my":"Data inv\u00e1lida: mm/aaaa","mask-ccs":"N\u00famero de cart\u00e3o de cr\u00e9dito inv\u00e1lido.","mask-cch":"N\u00famero de cart\u00e3o de cr\u00e9dito inv\u00e1lido.","mask-ccmy":"Data inv\u00e1lida.","mask-ccmyy":"Data inv\u00e1lida.","mask-ipv4":"Endere\u00e7o IPv4 inv\u00e1lido."}};
+//# sourceURL=fme-custom-mask-script-js-extra
+</script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-src="/wp-content/cache/min/1/wp-content/plugins/form-masks-for-elementor/assets/js/custom-mask-script.js?ver=1782403686" id="fme-custom-mask-script-js" data-rocket-defer defer></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-src="/wp-content/cache/min/1/wp-content/plugins/form-masks-for-elementor/assets/js/new-input-mask.js?ver=1782403686" id="fme-new-input-mask-js" data-rocket-defer defer></script>
+<script id="wp-emoji-settings" type="application/json">
+{"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"/wp-includes/js/wp-emoji-release.min.js?ver=45c4f9250e7b7970b11234a6cf8c01d8"}}
+</script>
+<script type="rocketlazyloadscript" data-rocket-type="module">
+/*! This file is auto-generated */
+const a=JSON.parse(document.getElementById("wp-emoji-settings").textContent),o=(window._wpemojiSettings=a,"wpEmojiSettingsSupports"),s=["flag","emoji"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const a=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===a[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,a){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!a(e,"\ud83e\u1fac8")}return!1}function f(e,t,n,a){let r;const o=(r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement("canvas")).getContext("2d",{willReadFrequently:!0}),s=(o.textBaseline="top",o.font="600 32px Arial",{});return e.forEach(e=>{s[e]=t(o,e,n,a)}),s}function r(e){var t=document.createElement("script");t.src=e,t.defer=!0,document.head.appendChild(t)}a.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),c.toString(),p.toString()].join(",")+"));",a=new Blob([e],{type:"text/javascript"});const r=new Worker(URL.createObjectURL(a),{name:"wpTestEmojiSupports"});return void(r.onmessage=e=>{i(n=e.data),r.terminate(),t(n)})}catch(e){}i(n=f(s,u,c,p))}t(n)}).then(e=>{for(const n in e)a.supports[n]=e[n],a.supports.everything=a.supports.everything&&a.supports[n],"flag"!==n&&(a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&a.supports[n]);var t;a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&!a.supports.flag,a.supports.everything||((t=a.source||{}).concatemoji?r(t.concatemoji):t.wpemoji&&t.twemoji&&(r(t.twemoji),r(t.wpemoji)))});
+//# sourceURL=/wp-includes/js/wp-emoji-loader.min.js
+</script>
+<script>window.lazyLoadOptions=[{elements_selector:"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}},{elements_selector:".rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,}];window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="/wp-content/plugins/wp-rocket/assets/js/lazyload/17.8.3/lazyload.min.js"></script><script>function lazyLoadThumb(e,alt,l){var t='<img loading="lazy" data-lazy-src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360"><noscript><img loading="lazy" src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360"></noscript>',a='<button class="play" aria-label="Reproducir video de YouTube"></button>';if(l){t=t.replace('data-lazy-','');t=t.replace('loading="lazy"','');t=t.replace(/<noscript>.*?<\/noscript>/g,'');}t=t.replace('alt=""','alt="&#x27;+alt+&#x27;"');return t.replace("ID",e)+a}function lazyLoadYoutubeIframe(){var e=document.createElement("iframe"),t="ID?autoplay=1";t+=0===this.parentNode.dataset.query.length?"":"&"+this.parentNode.dataset.query;e.setAttribute("src",t.replace("ID",this.parentNode.dataset.src)),e.setAttribute("frameborder","0"),e.setAttribute("allowfullscreen","1"),e.setAttribute("allow","accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"),this.parentNode.parentNode.replaceChild(e,this.parentNode)}document.addEventListener("DOMContentLoaded",function(){var exclusions=[];var e,t,p,u,l,a=document.getElementsByClassName("rll-youtube-player");for(t=0;t<a.length;t++)(e=document.createElement("div")),(u='https://i.ytimg.com/vi/ID/hqdefault.jpg'),(u=u.replace('ID',a[t].dataset.id)),(l=exclusions.some(exclusion=>u.includes(exclusion))),e.setAttribute("data-id",a[t].dataset.id),e.setAttribute("data-query",a[t].dataset.query),e.setAttribute("data-src",a[t].dataset.src),(e.innerHTML=lazyLoadThumb(a[t].dataset.id,a[t].dataset.alt,l)),a[t].appendChild(e),(p=e.querySelector(".play")),(p.onclick=lazyLoadYoutubeIframe)});</script>
+<script>var rocket_beacon_data = {"ajax_url":"\/wp-admin\/admin-ajax.php","nonce":"097e04b44e","url":"\/mais-sabor-com-mais-vantagens-tem-cashback-no-app-do-jah-2","is_mobile":false,"width_threshold":1600,"height_threshold":700,"delay":500,"debug":null,"status":{"atf":true,"lrc":true,"preconnect_external_domain":true},"elements":"img, video, picture, p, main, div, li, svg, section, header, span","lrc_threshold":1800,"preconnect_external_domain_elements":["link","script","iframe"],"preconnect_external_domain_exclusions":["static.cloudflareinsights.com","rel=\"profile\"","rel=\"preconnect\"","rel=\"dns-prefetch\"","rel=\"icon\""]}</script><script data-name="wpr-wpr-beacon" src='/wp-content/plugins/wp-rocket/assets/js/wpr-beacon.min.js' async></script><script>(()=>{class RocketElementorPreload{constructor(){this.deviceMode=document.createElement("span"),this.deviceMode.id="elementor-device-mode-wpr",this.deviceMode.setAttribute("class","elementor-screen-only"),document.body.appendChild(this.deviceMode)}t(){let t=getComputedStyle(this.deviceMode,":after").content.replace(/"/g,"");this.animationSettingKeys=this.i(t),document.querySelectorAll(".elementor-invisible[data-settings]").forEach((t=>{const e=t.getBoundingClientRect();if(e.bottom>=0&&e.top<=window.innerHeight)try{this.o(t)}catch(t){}}))}o(t){const e=JSON.parse(t.dataset.settings),i=e.m||e.animation_delay||0,n=e[this.animationSettingKeys.find((t=>e[t]))];if("none"===n)return void t.classList.remove("elementor-invisible");t.classList.remove(n),this.currentAnimation&&t.classList.remove(this.currentAnimation),this.currentAnimation=n;let o=setTimeout((()=>{t.classList.remove("elementor-invisible"),t.classList.add("animated",n),this.l(t,e)}),i);window.addEventListener("rocket-startLoading",(function(){clearTimeout(o)}))}i(t="mobile"){const e=[""];switch(t){case"mobile":e.unshift("_mobile");case"tablet":e.unshift("_tablet");case"desktop":e.unshift("_desktop")}const i=[];return["animation","_animation"].forEach((t=>{e.forEach((e=>{i.push(t+e)}))})),i}l(t,e){this.i().forEach((t=>delete e[t])),t.dataset.settings=JSON.stringify(e)}static run(){const t=new RocketElementorPreload;requestAnimationFrame(t.t.bind(t))}}document.addEventListener("DOMContentLoaded",RocketElementorPreload.run)})();</script></body>
+</html>
+
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me - Debug: cached@1784388890 -->
